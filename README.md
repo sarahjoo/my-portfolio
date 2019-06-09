@@ -1,3 +1,3 @@
 # My Portfolio
 
-A showcase of my work from the program.
+A showcase of my work, biography and contact information.

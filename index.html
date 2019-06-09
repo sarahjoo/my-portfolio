@@ -3,69 +3,41 @@
   <head>
     <title>Portfolio | Sarah Joo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Material Design Lite -->
-   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css">
-   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-  <!-- Font Awesome -->
-  <link link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-   <!-- Custom Styles -->
-   <link rel="stylesheet" href="../Styles/main.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/08ebcf1881.js"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
   </head>
-
   <body>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1>Sarah Joo</h1>
-      <p class="slogan">UX Designer from Richmond, VA</p>
+    <header>
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="personal logo"></a>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Projects</a></li>
+        </ul>
+      </nav>
     </header>
-    <main class="mdl-layout__content mdl-grid">
-          <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-            <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-              <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-            </div>
-            <div class="mdl-cell mdl-cell--7-col">
-              <h2 class="mdl-card__title-text">Featured Project Name</h2>
-              <p class="project-description mdl-card__supporting-text">Project description text</p>
-            </div>
-          </div>
-
-          <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-             <div>
-               <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-             </div>
-             <div class="mdl-card__title">
-               <h2 class="mdl-card__title-text">Project Name</h2>
-             </div>
-             <div class="mdl-card__supporting-text">Project description text</div>
-          </div>
-
-          <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-             <div>
-               <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-             </div>
-             <div class="mdl-card__title">
-               <h2 class="mdl-card__title-text">Project Name</h2>
-             </div>
-             <div class="mdl-card__supporting-text">Project description text</div>
-          </div>
-
-          <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-             <div>
-               <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-             </div>
-             <div class="mdl-card__title">
-               <h2 class="mdl-card__title-text">Project Name</h2>
-             </div>
-             <div class="mdl-card__supporting-text">Project description text</div>
-          </div>
+    <main>
+      <img src="images/leaf.png">
+      <h1>Hello! I'm Sarah Joo.</h1>
+      <p class="slogan">A <b>UX Designer</b> who likes to create <b>wholesome</b> and <b>joyful</b> digital experiences from Richmond, VA.</p>
+      <div class="featured proj">
+        <img src="images/case study 1/photostache-mockup.png" alt="project screenshot"/>
+        <h2>Photostache</h2>
+        <h3>Research, UI & UX Design, Branding</h3>
+        <p class="description">A fun and secure media cloud storage and sharing service for the everyday photo-taker</p>
+        <button><a href="project1.html">View Case Study</a></button>
+      </div>
     </main>
     <footer>
-      <ul class="mdl-mini-footer__link-list">
-        <li><a href="https://www.linkedin.com/in/sarah-joo"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/sahjoo"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></li>
+      <img src="images/footer-letschat.png">
+      <ul>
         <li><a href="mailto:joosangah@gmail.com"><i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sarah-joo"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/l0vejoo"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/sahjoo"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a></li>
       </ul>
      </footer>
   </body>
