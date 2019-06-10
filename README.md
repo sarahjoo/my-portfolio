@@ -1,3 +1,3 @@
-# My Portfolio
+# Welcome to my portfolio!
 
-A showcase of my work, biography and contact information.
+This is a showcase of my work, biography, and contact information.
