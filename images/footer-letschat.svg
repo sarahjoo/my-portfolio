@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="67px" viewBox="0 0 146 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.9539295,50.2100313 C16.6467931,52.0564263 15.6639566,53.992163 14.0054201,56.0172414 L21.9295393,51.7288401 C29.7922313,55.2429467 45.1490515,57 68,57 C102.276423,57 136,51.6394984 136,28.5 C136,5.36050157 106.97561,0 68,0 C37.3192044,0 0,2.94827586 0,28.5 C0,38.684953 5.65130985,45.9216301 16.9539295,50.2100313 Z" id="path-1"></path>
+        <filter x="-5.5%" y="-11.4%" width="112.5%" height="129.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile/footer" transform="translate(-57.000000, 23.000000)">
+            <g id="footer" transform="translate(0.000000, -20.000000)">
+                <g id="Group-3" transform="translate(24.000000, 0.000000)">
+                    <g id="Group" transform="translate(37.000000, 0.000000)">
+                        <g id="Path-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Want-to-chat?" font-family="Montserrat-Regular, Montserrat" font-size="15" font-weight="normal" fill="#555555">
+                            <tspan x="16" y="34">Want to chat?</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

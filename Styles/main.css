@@ -1,69 +1,217 @@
-* {
+:root {
+  --teal: hsla(177, 27%, 51%);
+  --lightgreen: hsla(138, 16%, 76%);
+  --darkgreen: hsla(177, 24%, 35%);
+  --whitegreen: hsla(144, 26%, 93%);
+  --rose: hsla(351, 42%, 58%);
+  --peach: hsla(9, 57%, 75%);
+  --whitepeach: hsla(355, 52%, 96%);
+  --black: hsla(0, 0%, 33%);
+}
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
 html {
+  background: url("/images/background.png") center / cover;
   font-size: 10px;
+  font-family: "Montserrat";
 }
 
-.container {
-  height: 100vh;
-  margin: 0 auto;
-  width: 80rem;
-}
-/* video: 21min */
-
-header {
-  background: url("../Images/hero-coral.jpg") center / cover;
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
+/* typography */
+h2 {
+  color: var(--rose);
+  font-family: "Handlee";
+  font-size: 3rem;
+  padding: .5rem 0;
 }
 
-h1 {
-  color: hsla(170, 100%, 12%);
-  font-weight: bold;
-  font-size: 4rem;
+h3 {
+  color: var(--black);
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  padding: .5rem 0;
+}
+
+p {
+  color: var(--black);
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 2rem;
+  padding: .5rem 0;
+}
+
+a:link {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--darkgreen);
+  text-decoration: none;
+}
+
+.greeting {
+  color: var(--darkgreen);
+  font-family: "Handlee";
+  font-size: 2.9rem;
 }
 
 .slogan {
-  color: hsla(170, 100%, 12%);
-  font-weight: 100;
-  font-size: 2rem;
+  color: var(--darkgreen);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-top: 1rem;
 }
 
-body {
-  padding-bottom: 5rem;
+/* assets */
+.logo {
+  width: 4.5rem;
+  display: inline-block;
+  float: left;
+  margin-left: 2.4rem;
+  position: relative;
+  top: 1rem;
 }
 
-main {
-  max-width: 900px;
- }
-
- .project-description {
-   padding-left: 0;
- }
-
- .project img {
-   width: 100%;
- }
-
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
+button {
+  background-color: #fff;
+  color: var(--teal);
+  font-size: 1.7rem;
+  border: .1rem solid;
   width: 100%;
-  z-index: 1;
-
+  padding: .5rem;
 }
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
+.hero img {
+  display: block;
+  position: relative;
+  top: -28rem;
+  right: -10rem;
+  width: 20rem;
+  z-index: -1;
+}
+
+/* footer images */
+.chat {
+  display: inline-block;
+  top: -6rem;
+  left: 7rem;
+  position: relative;
+}
+
+.profile {
+  width: 6.4rem;
+  display: inline-block;
+  left: -13rem;
+  position: relative;
+}
+
+i.fas, i.fab {
+  font-size: 3.2rem;
+  color: white;
+}
+
+footer > ul {
+  display: inline-block;
+}
+
+footer > ul > li {
+  color: #ffffff;
+  display: inline-block;
+  line-height: 18rem;
+  padding-right: 1.5rem;
+  vertical-align: middle;
+  left: -11rem;
+}
+
+/* project images */
+.mockup {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.mockup img {
+  width: 99%;
+}
+
+/* structure */
+.container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "navbar"
+    "hero"
+    "projects"
+    "footer";
+  overflow: hidden;
+}
+
+nav {
+  display: inline-block;
+  font-size: 1.6rem;
+  grid-area: navbar;
+  padding: 1rem;
+}
+
+nav > ul > li .navlinks {
+  color: var(--rose);
+  display: inline-block;
+  float: right;
+  margin: 1rem;
+  white-space: nowrap;
+  position: relative;
+  top: .5rem;
+}
+
+.hero {
+  grid-area: hero;
+  padding-top: 15rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30rem;
+}
+
+.projects {
+  grid-area: projects;
+  background-color: var(--whitegreen);
+  height: 32rem;
+  position: relative;
+  padding: 2.4rem;
+  top: -15rem;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: hsla(0, 100%, 100%, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-size: 2rem;
+  font-weight: lighter;
+  padding: 3rem;
+  transition: .5s ease;
+  visibility: hidden;
 }
 
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
-  }
+footer {
+  background-color: var(--lightgreen);
+  display: inline-block;
+  grid-area: footer;
+  height: 16rem;
 }
