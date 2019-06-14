@@ -1,0 +1,218 @@
+:root {
+  --teal: hsla(177, 27%, 51%);
+  --lightgreen: hsla(138, 16%, 76%);
+  --darkgreen: hsla(177, 24%, 35%);
+  --whitegreen: hsla(144, 26%, 93%);
+  --rose: hsla(351, 42%, 58%);
+  --peach: hsla(9, 57%, 75%);
+  --whitepeach: hsla(355, 52%, 96%);
+  --black: hsla(0, 0%, 33%);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  background: url("/images/background.png") center / cover;
+  font-size: 10px;
+  font-family: "Montserrat";
+  margin: 0 auto;
+}
+
+/* typography */
+h2 {
+  color: var(--rose);
+  font-family: "Handlee";
+  font-size: 3rem;
+  padding: .5rem 0;
+}
+
+h3 {
+  color: var(--black);
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  padding: .5rem 0;
+}
+
+p {
+  color: var(--black);
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 2rem;
+  padding: 1rem 0;
+}
+
+a:link {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--darkgreen);
+  text-decoration: none;
+}
+
+.greeting {
+  color: var(--darkgreen);
+  font-family: "Handlee";
+  font-size: 2.9rem;
+}
+
+.slogan {
+  color: var(--darkgreen);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-top: 1rem;
+}
+
+/* assets */
+button {
+  background-color: #fff;
+  color: var(--teal);
+  font-size: 1.7rem;
+  border: .1rem solid;
+  width: 100%;
+  padding: .5rem;
+}
+
+/* footer images */
+.chat {
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  top: -14rem;
+  left: -15%;
+  position: relative;
+}
+
+i.fas, i.fab {
+  font-size: 3.2rem;
+  color: white;
+}
+
+footer > ul {
+  justify-content: center;
+  text-align: center
+}
+
+footer > ul > li {
+  color: #ffffff;
+  display: inline-block;
+  padding: 3.4rem 1rem;
+}
+
+/* project images */
+.projects img {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* structure */
+.container {
+  display: grid;
+  grid-template-columns: auto-fit;
+  grid-template-areas:
+    "navbar"
+    "hero"
+    "projects"
+    "footer";
+  overflow: hidden;
+  place-items: stretch stretch;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  grid-area: navbar;
+  padding: 1rem;
+}
+
+.logo {
+  width: 4.5rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.4rem;
+}
+
+nav > ul > li .navlinks {
+  color: var(--rose);
+  padding-left: 2rem;
+}
+
+.hero {
+  align-items: baseline;
+  display: flex;
+  justify-content: flex-end;
+  grid-area: hero;
+  margin: 5rem 0;
+}
+
+.hero-text {
+  padding-left: 2.4rem;
+}
+
+.hero img {
+  display: block;
+  position: relative;
+  top: 4rem;
+  right: 10rem;
+  z-index: -1;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  grid-area: projects;
+  background-color: var(--whitegreen);
+  height: 48rem;
+  position: relative;
+  padding: 2.4rem;
+  flex-wrap: wrap;
+}
+
+.projects:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: hsla(0, 100%, 100%, 0.9);
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  background-color: var(--lightgreen);
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  height: auto;
+}

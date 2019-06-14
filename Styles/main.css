@@ -17,6 +17,7 @@ html {
   background: url("/images/background.png") center / cover;
   font-size: 10px;
   font-family: "Montserrat";
+  margin: 0 auto;
 }
 
 /* typography */
@@ -40,7 +41,7 @@ p {
   font-size: 1.6rem;
   font-weight: 100;
   line-height: 2rem;
-  padding: .5rem 0;
+  padding: 1rem 0;
 }
 
 a:link {
@@ -73,15 +74,6 @@ a:hover {
 }
 
 /* assets */
-.logo {
-  width: 4.5rem;
-  display: inline-block;
-  float: left;
-  margin-left: 2.4rem;
-  position: relative;
-  top: 1rem;
-}
-
 button {
   background-color: #fff;
   color: var(--teal);
@@ -91,27 +83,12 @@ button {
   padding: .5rem;
 }
 
-.hero img {
-  display: block;
-  position: relative;
-  top: -28rem;
-  right: -10rem;
-  width: 20rem;
-  z-index: -1;
-}
-
 /* footer images */
 .chat {
-  display: inline-block;
-  top: -6rem;
-  left: 7rem;
-  position: relative;
-}
-
-.profile {
-  width: 6.4rem;
-  display: inline-block;
-  left: -13rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  top: -14rem;
+  left: -15%;
   position: relative;
 }
 
@@ -121,97 +98,121 @@ i.fas, i.fab {
 }
 
 footer > ul {
-  display: inline-block;
+  justify-content: center;
+  text-align: center
 }
 
 footer > ul > li {
   color: #ffffff;
   display: inline-block;
-  line-height: 18rem;
-  padding-right: 1.5rem;
-  vertical-align: middle;
-  left: -11rem;
+  padding: 3.4rem 1rem;
 }
 
 /* project images */
-.mockup {
+.projects img {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   vertical-align: middle;
-}
-
-.mockup img {
-  width: 99%;
+  width: 100%;
 }
 
 /* structure */
 .container {
   display: grid;
-  grid-gap: 2rem;
+  grid-template-columns: auto-fit;
   grid-template-areas:
     "navbar"
     "hero"
     "projects"
     "footer";
   overflow: hidden;
+  place-items: stretch stretch;
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   font-size: 1.6rem;
   grid-area: navbar;
   padding: 1rem;
 }
 
+.logo {
+  width: 4.5rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.4rem;
+}
+
 nav > ul > li .navlinks {
   color: var(--rose);
-  display: inline-block;
-  float: right;
-  margin: 1rem;
-  white-space: nowrap;
-  position: relative;
-  top: .5rem;
+  padding-left: 2rem;
 }
 
 .hero {
+  align-items: baseline;
+  display: flex;
+  justify-content: flex-end;
   grid-area: hero;
-  padding-top: 15rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 30rem;
+  margin: 5rem 0;
+}
+
+.hero-text {
+  padding-left: 2.4rem;
+}
+
+.hero img {
+  display: block;
+  position: relative;
+  top: 4rem;
+  right: 10rem;
+  z-index: -1;
 }
 
 .projects {
+  display: flex;
+  justify-content: center;
   grid-area: projects;
   background-color: var(--whitegreen);
-  height: 32rem;
+  height: 48rem;
   position: relative;
   padding: 2.4rem;
-  top: -15rem;
+  flex-wrap: wrap;
 }
 
-.project:hover .overlay {
+.projects:hover .overlay {
   opacity: 1;
 }
 
 .overlay {
   position: absolute;
-  background-color: hsla(0, 100%, 100%, 0.9);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 2rem;
-  font-weight: lighter;
-  padding: 3rem;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
   transition: .5s ease;
-  visibility: hidden;
+  background-color: hsla(0, 100%, 100%, 0.9);
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
   background-color: var(--lightgreen);
-  display: inline-block;
+  display: flex;
   grid-area: footer;
-  height: 16rem;
+  justify-content: center;
+  height: auto;
 }
