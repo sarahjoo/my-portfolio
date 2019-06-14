@@ -119,6 +119,7 @@ footer > ul > li {
 
 /* structure */
 .container {
+  background-color: black;
   display: grid;
   grid-template-columns: auto-fit;
   grid-template-areas:
@@ -126,6 +127,7 @@ footer > ul > li {
     "hero"
     "projects"
     "footer";
+  margin: 0 auto;
   overflow: hidden;
   place-items: stretch stretch;
 }
