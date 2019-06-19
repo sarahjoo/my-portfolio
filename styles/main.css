@@ -71,8 +71,11 @@ button {
   border: .1rem solid;
   width: 100%;
   margin-top: 1.5rem;
-  padding: .6rem;
+  padding: .9rem;
+  opacity: 0.7;
+  transition: 0.3s;
 }
+button:hover {opacity: 1}
 
 /* main structure */
 *, *:before, *:after {
@@ -121,6 +124,7 @@ nav > ul > li .navlinks {
 
 .navlinks:hover {
   border-bottom: .2rem solid var(--salmon);
+  transition: 0.3s;
   text-decoration: none;
 }
 
@@ -142,11 +146,11 @@ nav > ul > li .navlinks {
 }
 
 .work {
-  background-color: rgba(255,255,255,0.05);
   display: flex;
   justify-content: center;
   position: relative;
   padding: 6rem 2.4rem;
+  margin-top: 5rem;
 }
 
 .work:hover .overlay {
@@ -163,7 +167,7 @@ nav > ul > li .navlinks {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(62, 32, 104, 0.95);
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 4rem;
@@ -176,6 +180,7 @@ nav > ul > li .navlinks {
 .overlay h2, h3, p {
   color: white;
 }
+
 
 .mockup {
   position: relative;
@@ -213,6 +218,7 @@ footer > ul > li {
 i.fas:hover, i.fab:hover {
   color: var(--salmon);
   text-decoration: none;
+  transition: 0.3s;
 }
 
 i.fas, i.fab {
