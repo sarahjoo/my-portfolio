@@ -11,32 +11,28 @@
 /* typography */
 h1 {
   color: #fff;
-  font-family: "Raleway";
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 2.2rem;
 }
 
 h2 {
   color: var(--purple);
-  font-family: "Raleway";
-  font-size: 2.7rem;
-  font-weight: 700;
+  font-size: 2.6rem;
+  font-weight: 800;
   line-height: 2rem;
 }
 
 h3 {
   color: var(--black);
-  font-family: "Raleway";
-  font-size: 2.1rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 2.6rem;
   margin: 1.4rem 0;
 }
 
 h4 {
-  color: var(--black);
-  font-family: "Raleway";
+  color: var(--white);
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3rem;
@@ -44,22 +40,16 @@ h4 {
 
 p {
   color: var(--black);
-  font-family: "Raleway";
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 2.2rem;
-}
-
-ol, ul {
-  margin: 2rem 0 3rem 2rem;
 }
 
 li {
   color: var(--black);
-  font-family: "Raleway";
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
 }
 
 .boldtext {
@@ -69,6 +59,7 @@ li {
 }
 
 a:link {
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -77,16 +68,26 @@ a:visited, a:active, a:hover {
   text-decoration: none;
 }
 
+.btn  {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 3rem 0;
+}
+
 button {
   background-color: rgba(77, 77, 77, 0);
   border: .15rem solid;
   color: var(--salmon);
   font-size: 1.7rem;
-  margin: 2rem 0;
-  opacity: 0.8;
-  padding: .9rem;
-  transition: 0.3s;
+  padding: 1rem 2.5rem;
+  transition: 0.5s;
   width: 100%;
+}
+
+@media screen and (min-width: 575px) {
+  button {
+    width: 30rem;
+  }
 }
 
 button > a:visited, a:link, a:active {
@@ -104,7 +105,7 @@ button:hover {
 html {
   background: linear-gradient(0deg, rgba(99,43,91,1) 0%, rgba(33,29,112,1) 100%);
   font-size: 10px;
-  font-family: "Montserrat";
+  font-family: "Raleway";
   margin: 0 auto;
 }
 
@@ -112,11 +113,26 @@ html {
   display: grid;
   grid-template-areas:
     "nav"
+    "header"
     "content"
     "footer";
   grid-template-columns: auto-fit;
-  overflow: hidden;
   place-items: stretch stretch;
+}
+
+@media screen and (min-width: 575px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "nav nav nav"
+      ". header ."
+      ". content ."
+      "footer footer footer";
+    grid-template-columns: 1fr fit-content(100rem) 1fr;
+    grid-template-rows: auto-fit;
+    overflow: hidden;
+    place-items: stretch stretch;
+  }
 }
 
 nav {
@@ -131,39 +147,50 @@ nav {
   width: 4.2rem;
 }
 
-.navlinks a:link, .navlinks a:visited, .navlinks a:active {
+.navlinks a:link, .navlinks a:visited {
   color: var(--white);
-  margin-left: 2rem;
+  margin-left: 1.6rem;
 }
 
-.navlinks a:hover {
-  opacity: .7;
+.navlinks a:active, .navlinks a:hover {
+  opacity: .6;
   text-decoration: none;
   transition: 0.5s ease;
 }
 
-.hero-home {
-  margin: 12rem 2.4rem 3rem 2.4rem;
+header {
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+  margin: 0 2.4rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: baseline;
+  padding: 14rem 0 4rem 0;
 }
 
 .hero-header {
-  display: inline-block;
-  line-height: 6rem;
-  margin-right: .5rem;
+  white-space: nowrap;
 }
-
 .hero-subheader {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.8rem;
+  margin-top: 1.5rem;
+}
+
+main {
+  grid-area: content;
+  justify-content: center;
 }
 
 .work {
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-  padding: 5rem 2.4rem;
+  margin: 5rem 0;
   position: relative;
 }
 
@@ -175,9 +202,16 @@ nav {
   opacity: 1;
 }
 
+.work:hover .mockup {
+  opacity: .1;
+  transition: .8s;
+}
+
 .overlay {
-  background: rgba(62, 32, 104, 0.95);
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   left: 0;
   opacity: 0;
@@ -185,13 +219,12 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .5s;
+  transition: .5s ease-out;
   width: 100%;
 }
 
 .mockup {
-  height: 100%;
-  margin-bottom: 2.4rem;
+  padding: 2rem 2.4rem;
   position: relative;
   vertical-align: middle;
   width: 100%;
@@ -200,7 +233,6 @@ nav {
 footer {
   align-items: center;
   background: rgba(0, 0, 0, 1);
-  bottom: 0;
   grid-area: footer;
   display: flex;
   height: 12rem;
@@ -230,38 +262,77 @@ i.fas, i.fab {
 }
 
 i.fas:hover, i.fab:hover {
-  opacity: .7;
+  opacity: .6;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /* case study structure */
-main {
+.top {
+  margin: 0 2.4rem;
+}
+.case-study-content {
   grid-template-columns: auto-fit;
   grid-area: content;
   grid-template-areas:
-    "hero"
     "project-info"
     "sub-menu"
-    "case-study"
-    "bottom-nav";
+    "case-study";
   overflow: hidden;
   place-items: stretch stretch;
 }
 
-.hero {
-  grid-area: hero;
-  margin: 0 2.4rem;
-}
-
 .project-info {
-  background: var(--white);
-  color: var(--blue);
   display: flex;
   grid-area: project-info;
   justify-content: space-around;
-  margin: 1rem 0;
-  padding: 2rem 2.4rem 0 0;
+  padding-bottom: 3rem;
+}
+
+.project-info li {
+  color: var(--white);
+}
+
+.sub-menu {
+  background: var(--salmon);
+  display: flex;
+  grid-area: sub-menu;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sub-menu ul {
+  padding: 3rem 2.4rem;
+}
+
+@media screen and (min-width: 575px) {
+  .sub-menu ul {
+    display: flex;
+    padding: 1.4rem 2.4rem;
+  }
+}
+
+.sub-menu li {
+  color: var(--fadewhite);
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 575px) {
+  .sub-menu li {
+    display: flex;
+    align-items: center;
+    margin: 0 .5rem;
+  }
+}
+
+.sub-menu a:visited, .sub-menu a:link {
+  color: var(--white);
+}
+
+ .sub-menu a:active, .sub-menu a:hover {
+  opacity: .6;
+  transition: 0.5s;
 }
 
 .case-study {
@@ -270,15 +341,31 @@ main {
   padding: 2rem 2.4rem;
 }
 
-.case-study h2, .case-study h3 {
+@media screen and (min-width: 991px) {
+  .case-study {
+    padding: 2rem 14rem;
+  }
+}
+.case-study h2 {
   color: var(--black);
-  margin: 2.2rem 0 .8rem 0;
+  margin: 2rem 0 3rem 0;
+}
+
+.case-study h3 {
+  color: var(--black);
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+  margin-top: 3rem;
 }
 
 .case-study p {
   color: var(--black);
   line-height: 2.4rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.case-study ol, .case-study ul {
+  margin: 0 0 2.5rem 2rem;
 }
 
 .case-study li {
@@ -293,54 +380,50 @@ main {
   width: 100%;
 }
 
-.sub-menu {
-  background: var(--blue);
-  display: flex;
-  grid-area: sub-menu;
-  justify-content: center;
-  text-align: center;
+.personas {
+  display: none;
 }
 
-.sub-menu li {
-  color: var(--fadewhite);
-  font-weight: 500;
-  line-height: 2rem;
-}
+@media screen and (min-width: 575px) {
+  .persona-btn {
+    display: none;
+  }
 
-.sub-menu a:visited, .sub-menu a:link {
-  color: var(--white);
-}
+  .personas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    opacity: 1;
+  }
 
-.sub-menu a:hover, .sub-menu a:active {
-  opacity: .7;
-  transition: 0.5s;
+  .personas img {
+    margin-right: 1.6rem;
+  }
 }
 
 .bottom-nav {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  grid-area: bottom-nav;
+  position: relative;
 }
 
-.bottom-nav a:link, .bottom-nav a:active, .bottom-nav a:visited {
-  color: var(--white);
+.bottom-nav ul, .bottom-nav li {
+  line-height: 0;
+  margin: 1rem 0;
+}
+
+.bottom-nav a:link, .bottom-nav a:visited {
   font-size: 1.8rem;
-  opacity: 1;
 }
 
-.bottom-nav a:hover {
-  opacity: .7;
-  transition: .3s;
+.bottom-nav a:active, .bottom-nav a:hover {
+  opacity: .6;
+  transition: .5s;
 }
 
 .bottom-nav i.fas {
-  font-size: 2.5rem;
-}
-
-.links {
-  display: flex;
-  justify-content: flex-start;
+  color: var(--salmon);
+  font-size: 2rem;
 }
 
 .up {
