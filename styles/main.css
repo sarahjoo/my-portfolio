@@ -1,8 +1,8 @@
 /* colors */
 :root {
-  --blue: rgba(33, 29, 112, 1);
+  --blue: rgba(26, 23, 89, 1);
   --salmon: rgba(232, 100, 100, 1);
-  --purple: rgba(99, 43, 91, 1);
+  --purple: rgba(89, 33, 81, 1);
   --black: rgba(77, 77, 77, 1);
   --white: rgba(255, 255, 255, .9);
   --fadewhite: rgba(255, 255, 255, .7);
@@ -12,22 +12,24 @@
 h1 {
   color: #fff;
   font-size: 3rem;
-  font-weight: 600;
-  line-height: 2.2rem;
+  font-weight: 800;
+  line-height: 3.6rem;
+  margin-bottom: 1.4rem;
 }
 
 h2 {
-  color: var(--purple);
-  font-size: 2.6rem;
-  font-weight: 800;
-  line-height: 2rem;
+  color: var(--white);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
   color: var(--black);
   font-size: 2rem;
   font-weight: 600;
-  line-height: 2.6rem;
+  line-height: 2.8rem;
   margin: 1.4rem 0;
 }
 
@@ -42,7 +44,7 @@ p {
   color: var(--black);
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
 }
 
 li {
@@ -68,20 +70,21 @@ a:visited, a:active, a:hover {
   text-decoration: none;
 }
 
-.btn  {
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem 0 3rem 0;
+.btn {
+  text-align: center;
 }
 
 button {
   background-color: rgba(77, 77, 77, 0);
-  border: .15rem solid;
+  border: .17rem solid;
   color: var(--salmon);
+  cursor: pointer;
   font-size: 1.7rem;
-  padding: 1rem 2.5rem;
+  margin: 1.5rem 0 3rem 0;
+  padding: .8rem 2.2rem;
   transition: 0.5s;
   width: 100%;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 575px) {
@@ -103,7 +106,7 @@ button:hover {
 }
 
 html {
-  background: linear-gradient(0deg, rgba(99,43,91,1) 0%, rgba(33,29,112,1) 100%);
+  background: linear-gradient(0deg, rgba(89, 33, 81, 1) 0%, rgba(26, 23, 89, 1) 100%);
   font-size: 10px;
   font-family: "Raleway";
   margin: 0 auto;
@@ -122,7 +125,6 @@ html {
 
 @media screen and (min-width: 575px) {
   .container {
-    display: grid;
     grid-template-areas:
       "nav nav nav"
       ". header ."
@@ -131,7 +133,6 @@ html {
     grid-template-columns: 1fr fit-content(100rem) 1fr;
     grid-template-rows: auto-fit;
     overflow: hidden;
-    place-items: stretch stretch;
   }
 }
 
@@ -147,9 +148,15 @@ nav {
   width: 4.2rem;
 }
 
+.stars {
+  position: absolute;
+  top: 1rem;
+  left: 7rem;
+}
+
 .navlinks a:link, .navlinks a:visited {
   color: var(--white);
-  margin-left: 1.6rem;
+  margin-left: 1.4rem;
 }
 
 .navlinks a:active, .navlinks a:hover {
@@ -165,28 +172,64 @@ header {
   margin: 0 2.4rem;
 }
 
-.hero-text {
+@media screen and (min-width: 991px) {
+  header {
+    display: flex;
+    justify-self: center;
+    max-width: 80rem;
+  }
+}
+
+.hero {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-self: baseline;
-  padding: 14rem 0 4rem 0;
+  margin-top: 16rem;
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 575px) {
+  .hero {
+    margin-top: 24rem;
+    margin-bottom: 12rem;
+  }
 }
 
 .hero-header {
-  white-space: nowrap;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: normal;
+  overflow: hidden;
 }
+
+@media screen and (min-width: 575px) {
+  .hero-header {
+    font-size: 4rem;
+    line-height: normal;
+  }
+}
+
 .hero-subheader {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 2.8rem;
+  line-height: 3.8rem;
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 575px) {
+  .hero-subheader {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
 }
 
 main {
   grid-area: content;
   justify-content: center;
+}
+
+.main-margin {
+  margin-bottom: 12rem;
 }
 
 .work {
@@ -232,12 +275,11 @@ main {
 
 footer {
   align-items: center;
-  background: rgba(0, 0, 0, 1);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(89, 33, 81, 0) 100%);
   grid-area: footer;
   display: flex;
-  height: 12rem;
+  height: 14rem;
   justify-content: center;
-  margin-top: 5rem;
 }
 
 footer > ul > li {
@@ -246,10 +288,10 @@ footer > ul > li {
 }
 
 .chat-bubble {
-  margin-left: -17rem;
+  margin-left: -10rem;
   padding-left: 2.4rem;
   position: relative;
-  top: -3.8rem;
+  top: -6.8rem;
 }
 
 .connect-icons {
@@ -272,8 +314,8 @@ i.fas:hover, i.fab:hover {
   margin: 0 2.4rem;
 }
 .case-study-content {
-  grid-template-columns: auto-fit;
   grid-area: content;
+  grid-template-columns: auto-fit;
   grid-template-areas:
     "project-info"
     "sub-menu"
@@ -338,12 +380,13 @@ i.fas:hover, i.fab:hover {
 .case-study {
   background: var(--white);
   grid-area: case-study;
-  padding: 2rem 2.4rem;
+  padding: 2rem 2.4rem 14rem 2.4rem;
 }
 
 @media screen and (min-width: 991px) {
   .case-study {
-    padding: 2rem 14rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 }
 .case-study h2 {
@@ -385,15 +428,15 @@ i.fas:hover, i.fab:hover {
 }
 
 @media screen and (min-width: 575px) {
-  .persona-btn {
-    display: none;
-  }
-
   .personas {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
     opacity: 1;
+  }
+
+  .persona-btn {
+    display: none;
   }
 
   .personas img {
@@ -430,4 +473,148 @@ i.fas:hover, i.fab:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* bio page */
+.bio {
+  display: grid;
+  grid-area: content;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "section1"
+    "section2"
+    "section3"
+    "section4";
+  grid-template-columns: auto-fit;
+  overflow: hidden;
+  padding: 0 2.4rem;
+  place-items: stretch stretch;
+}
+
+@media screen and (min-width: 575px) {
+  .bio {
+    align-items: flex-start;
+    grid-gap: 2rem 4rem;
+    grid-template-columns: 1rem 6fr 4fr 1rem;
+    grid-template-areas:
+      ". section2 section1 ."
+      ". section3 section4 .";
+    grid-template-rows: auto-fit;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .bio {
+    align-items: flex-start;
+    grid-gap: 2rem 4rem;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+      "section2 section1"
+      "section3 section1"
+      "section3 section4";
+    grid-template-rows: repeat(1fr 2fr);
+    overflow: hidden;
+  }
+}
+
+.bio h3 {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.bio p {
+  color: var(--white);
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: section1;
+}
+
+.resume-btn {
+  margin: 0;
+  width: 100%;
+}
+
+.profile {
+  width: 100%;
+}
+
+@media screen and (min-width: 575px) {
+  .profile {
+    width: 90%;
+  }
+
+  .resume-btn {
+    width: 90%;
+  }
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.section4 {
+  grid-area: section4;
+}
+
+@media screen and (min-width: 575px) {
+  .section4 {
+  width: 90%;
+  }
+}
+
+/* contact page */
+.contact {
+  margin: 1rem 4rem;
+}
+
+@media screen and (min-width: 575px) {
+  .contact {
+    width: 40rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+input {
+  height: 3rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border: 0;
+  border-radius: 4px;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: .5rem 0;
+  width: 100%;
+}
+
+textarea {
+  background-color: var(--white);
+  border: 0;
+  border-radius: 4px;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: 300;
+  height: 10rem;
+  padding: 1rem;
+  margin: .5rem 0;
+  resize: vertical;
+  width: 100%;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+ background-color: lightgray;
 }
