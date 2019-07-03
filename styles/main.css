@@ -242,6 +242,7 @@ main {
 
 .work h2, .work h3, .work p {
   color: var(--white);
+  line-height: 1.8rem;
 }
 
 .work:hover .overlay {
@@ -263,7 +264,7 @@ main {
 @media screen and (min-width: 500px) {
   .mockup {
     padding: 0;
-    width: 90%;
+    width: 80%;
   }
 }
 
