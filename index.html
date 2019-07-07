@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sarah Joo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Sarah Joo</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/08ebcf1881.js"></script>
     <!-- Custom Styles -->
@@ -11,35 +11,42 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway"/>
   </head>
   <body>
-    <section class="container">
+    <div class="container">
       <nav>
         <a href="index.html"><img class="logo" src="images/logo.svg" alt="personal logo"></a>
         <img class="stars" src="images/stars.svg" alt="stars motif">
-        <div class="navlinks">
-          <a href="about.html">About</a>
-          <a href="index.html">Work</a>
-          <a href="contact.html">Contact</a>
-        </div>
+        <ul class="navlinks">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <header class="hero">
-        <h1 class="hero-header">Hello! I'm Sarah Joo.</h1>
-        <h2 class="hero-subheader">A <b>UX Designer</b> who likes to create <b>wholesome</b> and <b>joyful</b> digital experiences from hip Richmond, VA.</h2>
+      <header>
+        <div class="hero">
+          <h1 class="hero-header">Hello! I'm Sarah Joo.</h1>
+          <h2 class="hero-subheader">A <b>UX Designer</b> who likes to create <b>wholesome</b> and <b>joyful</b> digital experiences from hip Richmond, VA.</h2>
+        </div>
+        <div class="see-work sink">
+          <a href="#work">View Work</a><br>
+          <a href="#work" aria-label="See Work"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
       </header>
       <main class="main-margin">
-        <section class="work">
-          <img class="mockup" src="images/case study 1/photostache-mockup.png" alt="project screenshot">
-          <div class="overlay">
+        <a name="work"></a>
+        <div class="project">
+          <a href="project1.html"><img class="mockup" src="images/case-study-1/photostache-mockup.png" alt="photostache mockup"></a>
+          <section class="proj-info">
             <h2>Photostache</h2>
             <h3>Research, UX/UI Design, Branding</h3>
-            <p>A fun and secure media cloud storage and sharing service for the everyday photo-taker.</p>
+            <p>A fun and secure media cloud storage and sharing service for the everyday photo-taker.</p><br>
             <div class="btn">
-              <a href="project1.html"><button>View Case Study</button></a>
+              <a class="button sink cs-btn" href="project1.html">View Case Study</a>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
       <footer>
-        <img class="chat-bubble" src="images/footer-letschat.svg" alt="Let's Chat! speech bubble">
+        <a href="contact.html"><img class="chat-bubble sink" src="images/footer-letschat.svg" alt="Let's Chat! speech bubble"></a>
         <ul class="connect-icons">
           <li><a href="mailto:joosangah@gmail.com"><i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i></a></li>
           <li><a href="https://www.linkedin.com/in/sarah-joo"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
@@ -47,7 +54,7 @@
           <li><a href="https://github.com/sahjoo"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a></li>
         </ul>
       </footer>
-    </section>
+    </div>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143314105-1"></script>
   <script>
