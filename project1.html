@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Portfolio | Sarah Joo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/08ebcf1881.js"></script>
     <!-- Custom Styles -->
@@ -11,28 +11,28 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway"/>
   </head>
   <body>
-    <section class="cs-container">
+    <div class="cs-container">
       <nav>
         <a href="index.html"><img class="logo" src="images/logo.svg" alt="personal logo"></a>
         <img class="stars" src="images/stars.svg" alt="stars motif">
-        <div class="navlinks">
-          <a href="about.html">About</a>
-          <a href="index.html">Work</a>
-          <a href="contact.html">Contact</a>
-        </div>
+        <ul class="navlinks">
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
       <header class="cs-header">
         <section class="cs-top">
-          <img class="mockup" src="images/case study 1/photostache-mockup.png" alt="project screenshot">
+          <img class="mockup" src="images/case-study-1/photostache-mockup.png" alt="photostache mockup">
           <div class="cs-details">
             <h1>photostache</h1>
             <h2>A media cloud storage service that helps protect, organize and share your cherished memories.</h2>
           </div>
           <div class="btn">
-            <a href="https://invis.io/3XRETK7YEHP"><button>View Prototype</button></a>
+            <a class="button sink" href="https://invis.io/3XRETK7YEHP">View Prototype</a>
           </div>
         </section>
-        <section class="project-info">
+        <section class="cs-info">
           <ul>
             <li><h4><span class="underline">Role</span></h4></li>
             <li>Research</li>
@@ -79,9 +79,9 @@
             <li><span class="boldtext">• 54%</span> dissatisfied with organization, security/privacy, or file sharing</li>
             <li><span class="boldtext">• 100%</span> save documents, spreadsheets and photos</li>
           </ul>
-          <img src="images/case study 1/chart1.png" alt="Survey result example 1">
-          <img src="images/case study 1/chart2.png" alt="Survey result example 2">
-          <img src="images/case study 1/chart3.png" alt="Survey result example 3">
+          <img src="images/case-study-1/chart1.png" alt="Survey result example 1">
+          <img src="images/case-study-1/chart2.png" alt="Survey result example 2">
+          <img src="images/case-study-1/chart3.png" alt="Survey result example 3">
           <p>These findings told us where the focus should be:</p>
           <ol>
             <li>1. Organization </li>
@@ -91,16 +91,28 @@
           <h3>Competitive Analysis</h3>
           <p>After performing a SWOT analysis on popular cloud storage services like Dropbox and Google Drive, it was clear the market was overflowing with file storage apps, but only a few photo storage apps. I saw an opportunity to create something for our users in this market. Upon analysis, Google Photos, Flickr, and Cluster have uses for certain audiences, but none of them solved the major problems identified in the survey for our target audience.</p>
           <div class="btn">
-            <a href="https://drive.google.com/open?id=1pN52gvxHIW2B6VEA2IHgtOvibPjDu6JQ"><button>View Analysis</button></a>
-          </div><br><br>
+            <a class="button sink" href="https://drive.google.com/open?id=1pN52gvxHIW2B6VEA2IHgtOvibPjDu6JQ">View Analysis</a>
+          </div>
+          <br><br>
           <h3>User Personas</h3>
           <p>In order to focus on the motivations, goals and frustrations of our potential users, I created personas to give them a voice.</p>
-          <div class="btn">
-            <a href="https://drive.google.com/open?id=1imk1Wx_0ERu5qpjE4RPPBq2mD1B3ujTE"><button class="persona-btn">View Personas</button></a>
+          <div class="persona">
+            <img src="images/case-study-1/persona-rachel.png" alt="Rachel's persona">
+            <section class="persona-grp">
+              <h4>“Organizing files is so time-consuming. I wish there was a better way to find my files.”</h4>
+              <div class="btn">
+                <a class="button sink persona-btn" href="https://drive.google.com/open?id=11Hye4Vzm1INKl81SF6CldDkBsKnFY3lM">Meet Rachel</a>
+              </div>
+            </section>
           </div>
-          <div class="personas">
-            <img src="images/case study 1/persona1.png" alt="Rachel's persona">
-            <img src="images/case study 1/persona2.png" alt="Dan's persona">
+          <div class="persona">
+            <img src="images/case-study-1/persona-dan.png" alt="Dan's persona">
+            <section class="persona-grp">
+              <h4>“I like to backup all my photos on the cloud, but I’m concerned about the lack of privacy.”</h4>
+              <div class="btn">
+                <a class="button sink persona-btn" href="https://drive.google.com/open?id=18EyeuaobilXRbHB51gQHcDehV2R6BE9X">Meet Dan</a>
+              </div>
+            </section>
           </div><br><br>
           <a name="ia"></a><h2><span class="underline">Information Architecture</span></h2>
           <h3>User Stories & Flows</h3>
@@ -113,47 +125,60 @@
             <li>• Organizing items</li>
           </ul>
           <p>I sketched and created digital user flows that related to the high priority user tasks and a site map to frame the users’ navigation.</p>
-          <img src="images/case study 1/userflow.png" alt="Onboarding User Flow">
+          <img src="images/case-study-1/userflow.png" alt="Onboarding User Flow">
           <div class="btn">
-            <a href="https://www.draw.io/?state=%7B%22ids%22:%5B%221l0eXWaXG68OVa8kwI0d6HDg-ZDpVYYdA%22%5D,%22action%22:%22open%22,%22userId%22:%22106297765843462579334%22%7D#G1l0eXWaXG68OVa8kwI0d6HDg-ZDpVYYdA"></a><button>View User Flows</button></a><br><br>
+            <a class="button sink" href="https://www.draw.io/?state=%7B%22ids%22:%5B%221l0eXWaXG68OVa8kwI0d6HDg-ZDpVYYdA%22%5D,%22action%22:%22open%22,%22userId%22:%22106297765843462579334%22%7D#G1l0eXWaXG68OVa8kwI0d6HDg-ZDpVYYdA">View User Flows</a><br><br>
           </div>
           <h3>Wireframes</h3>
           <p>For the first part of the design phase, I sketched and digitally created low fidelity wireframes. Then I conducted usability testing to ensure easy readability and navigation. We only encountered out issues with consistency in the writing and the small search bar size. I made adjustments based on this feedback. In the Branding section, I will explain why the logo in the images show “Snaphero” but the prototype shows “Photostache”.</p>
-          <img src="images/case study 1/wireframe1.png" alt="landing page wireframe">
-          <img src="images/case study 1/wireframe2.png" alt="dashboard wireframe">
+          <img src="images/case-study-1/wireframe1.png" alt="landing page wireframe">
+          <img src="images/case-study-1/wireframe2.png" alt="dashboard wireframe">
           <div class="btn">
-            <a href="https://invis.io/WZQXA4G6N57"><button>View Wireframe Prototype</button></a><br><br>
+            <a class="button sink" href="https://invis.io/WZQXA4G6N57">View Wireframe Prototype</a><br><br>
           </div>
           <a name="branding"></a><h2><span class="underline">Branding</span></h2>
           <p>The first draft of the brand name and logo sketches were for Snaphero, with the concept of the “snaps” being rescued by the product. However, the glyphs in the logo letters were too small when rendered digitally. The comic style that I wanted to display for the website design started to take too much time also.</p>
           <p>As a result, I created alternative logos (Squirrel and Photostache) and shifted the brand style to a rustic or hipster vibe. After all, I do live in hipster city. The concept was that users could stash their photos and videos using the service. Through preference testing, Photostache (#5 to be exact) won potential users over with its obvious meaning and punny humor.</p>
           <p>From there, I put together a moodboard and refered to that to create a brand style guide.</p>
-          <img src="images/case study 1/branding1.png" alt="mindmap image">
-          <img src="images/case study 1/branding2.png" alt="logo sketches">
-          <img src="images/case study 1/logo-pref-test1.png" alt="logo preference testing">
-          <img src="images/case study 1/logo-pref-test2.png" alt="Photostache logo preference testing">
-          <img src="images/case study 1/photostachelogo.png" alt="photostache logo">
+          <h4>Brainstorming:</h4>
+          <img src="images/case-study-1/branding1.png" alt="mindmap image">
+          <img src="images/case-study-1/branding2.png" alt="logo sketches">
+          <h4>Preference Testing:</h4>
+          <img src="images/case-study-1/logo-pref-test1.png" alt="logo preference testing">
+          <h4>Finished logo and brand:</h4>
           <p>After more iterations and preference testing, the look of the logo also evolved to a more readible typeface. And now that the branding was done, I put together a moodboard and style guide that defines the brand's logo, typeface, icons and color palette.</p>
+          <img src="images/case-study-1/photostachelogo.png" alt="photostache logo">
+          <img src="images/case-study-1/color-palette.png" alt="color palette">
           <div class="btn">
-            <a href="https://drive.google.com/open?id=1KHPRu87t2xpU7OHIBLyOtW0ZhKSfm_y5"><button>View Style Guide</button></a><br><br>
+            <a class="button sink" href="https://drive.google.com/open?id=1KHPRu87t2xpU7OHIBLyOtW0ZhKSfm_y5">View Style Guide</a><br><br>
           </div>
           <a name="mockups"></a><h2><span class="underline">Hi-Fi Mockups</span></h2>
           <p>I incorporated images and the brand styles into the wireframes to create high fidelity mockups. I used preference testing again to help determine the best design options.</p>
           <p>This time I conducted usability testing on the mockup prototype. There was one consistent issue that was raised by all participants. The more options icons needed labels for those who are not familiar with them. Being close to age 60, one of the participants couldn’t complete some of the tasks because she didn’t know what the icons meant.</p>
           <p>Finally, I added hovering labels to the icons and other changes, which lead us to the final iteration of the product.</p>
-          <img src="images/case study 1/hifimockup.png" alt="mindmap image"><br><br>
+          <h4>Final Mockups After Testing:</h4>
+          <img src="images/case-study-1/mockup1.png" alt="mockup-options menu">
+          <img src="images/case-study-1/mockup2.png" alt="mockup-uploading">
+          <h4>Mobile Mockups:</h4>
+          <div class="span-img">
+            <img src="images/case-study-1/mobile-mockup1.png" alt="mobile mockup-adding item">
+            <img src="images/case-study-1/mobile-mockup2.png" alt="mobile mockup-uploading">
+          </div>
+          <div class="btn">
+            <a class="button sink" href="https://drive.google.com/open?id=1UZcYY1fl4OemdclLeEGGg5IhZf7IWIm6">View All Mockups</a><br><br>
+          </div>
           <a name="conclusion"></a><h2><span class="underline">Conclusion</span></h2>
           <p>Looking back, I think perhaps too much time was spent pondering on design decisions when preference tests could’ve been utilized early on. Ultimately, this product was made for those potential users. I made many assumptions that were proven wrong through the usability tests. Encountering these problems early in the design phase is necessary and saves so much time and headaches down the line. I’m looking forward to be proven wrong again on future projects!</p><br>
-          <div class="bottom-nav">
+          <div class="bottom-nav sink">
             <a href="index.html"><i class="fas fa-chevron-left" aria-hidden="true"></i> Back to Portfolio</a>
           </div>
-          <div id="top-link">
+          <div class="top-link sink">
             <a href="#" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
           </div>
         </section>
       </main>
       <footer>
-        <img class="chat-bubble" src="images/footer-letschat.svg" alt="Let's Chat! speech bubble">
+        <a href="contact.html"><img class="chat-bubble sink" src="images/footer-letschat.svg" alt="Let's Chat! speech bubble"></a>
         <ul class="connect-icons">
           <li><a href="mailto:joosangah@gmail.com"><i class="fas fa-envelope-square" aria-hidden="true"></i></a></li>
           <li><a href="https://www.linkedin.com/in/sarah-joo"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
@@ -161,7 +186,7 @@
           <li><a href="https://github.com/sahjoo"><i class="fab fa-github-square" aria-hidden="true"></i></a></li>
         </ul>
       </footer>
-    </section>
+    </div>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143314105-1"></script>
   <script>

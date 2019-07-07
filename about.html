@@ -11,22 +11,23 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway"/>
   </head>
   <body>
-    <section class="container">
+    <div class="container">
       <nav>
         <a href="index.html"><img class="logo" src="images/logo.svg" alt="personal logo"></a>
         <img class="stars" src="images/stars.svg" alt="stars motif">
-        <div class="navlinks">
-          <a href="about.html">About</a>
-          <a href="index.html">Work</a>
-          <a href="contact.html">Contact</a>
-        </div>
+        <img class="stars" src="images/stars.svg" alt="stars motif">
+        <ul class="navlinks">
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
       <main class="main-margin">
         <section class="bio">
           <div class="section1">
             <h3>You can call me Sarah or Joo (jū).</h3>
             <img class="profile" src="images/bio-profile.png" alt="profile image">
-            <a href="https://drive.google.com/open?id=1XxeO0w4JTw2fo8YI0vAw-4LM33fae3Oo"><button class="resume-btn">View Resume</button></a>
+            <a class="button sink resume-btn" href="https://drive.google.com/open?id=1XxeO0w4JTw2fo8YI0vAw-4LM33fae3Oo">View Resume</a>
           </div>
           <div class="section2">
             <h3>My great love for stories, art and technology drive me today.</h3>
@@ -43,7 +44,7 @@
         </section>
       </main>
       <footer>
-        <img class="chat-bubble" src="images/footer-letschat.svg" alt="Let's Chat! speech bubble">
+        <a href="contact.html"><img class="chat-bubble sink" src="images/footer-letschat.svg" alt="Let's Chat! speech bubble"></a>
         <ul class="connect-icons">
           <li><a href="mailto:joosangah@gmail.com"><i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i></a></li>
           <li><a href="https://www.linkedin.com/in/sarah-joo"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
@@ -51,7 +52,7 @@
           <li><a href="https://github.com/sahjoo"><i class="fab fa-github-square fa-2x" aria-hidden="true"></i></a></li>
         </ul>
       </footer>
-    </section>
+    </div>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143314105-1"></script>
   <script>
