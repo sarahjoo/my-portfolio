@@ -20,7 +20,7 @@ h1 {
 h2 {
   color: var(--white);
   font-family: "Poppins";
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   font-weight: 600;
   line-height: 3rem;
 }
@@ -28,7 +28,7 @@ h2 {
 h3 {
   color: var(--black);
   font-family: "Poppins";
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   line-height: 3.2rem;
   margin: 1.4rem 0;
@@ -59,7 +59,7 @@ li {
 
 .boldtext {
   color: rgba(77, 77, 77, .7);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
@@ -77,8 +77,7 @@ a:link, a:visited, a:active, a:hover {
 
 .btn {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin: 2rem 0;
 }
 
 .button {
@@ -328,6 +327,10 @@ main {
     max-width: 45rem;
   }
 
+  .hifi-mockup {
+    padding: 0 8rem;
+  }
+
   .cs-btn {
     width: 100%;
   }
@@ -340,6 +343,7 @@ footer {
   display: flex;
   height: 14rem;
   justify-content: center;
+  position: relative;
 }
 
 footer > ul > li {
@@ -348,10 +352,10 @@ footer > ul > li {
 }
 
 .chat-bubble {
-  margin-left: -10rem;
+  margin-left: -17rem;
   padding-left: 2.4rem;
-  position: relative;
-  top: -5.5rem;
+  position: absolute;
+  bottom: 6.4rem;
 }
 
 .connect-icons {
@@ -459,7 +463,7 @@ footer i.fas:hover, footer i.fab:hover {
 @media screen and (min-width: 651px) {
   .sub-menu ul {
     display: flex;
-    padding: 1.4rem 12rem;
+    padding: 1.4rem 2.4rem;
   }
 }
 
@@ -493,24 +497,10 @@ footer i.fas:hover, footer i.fab:hover {
   padding: 2rem 2.4rem 14rem 2.4rem;
 }
 
-@media screen and (min-width: 651px) {
-  .case-study {
-    padding-left: 12rem;
-    padding-right: 12rem;
-  }
-}
-
 @media screen and (min-width: 951px) {
   .case-study {
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .case-study {
-    padding-left: 22rem;
-    padding-right: 22rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
@@ -532,40 +522,57 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .case-study ol, .case-study ul {
-  margin: 0 0 2.5rem 2rem;
+  margin: 0 0 3rem 2rem;
 }
 
 .case-study li {
+  font-family: "Raleway";
   line-height: 2rem;
   margin: 1rem 0;
 }
 
 .case-study img {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   position: relative;
   vertical-align: middle;
   width: 100%;
 }
 
-.persona {
+@media screen and (min-width: 700px) {
+  .col-split {
+    display: flex;
+    justify-items: flex-start;
+  }
+
+  .col1 {
+    padding-right: 4rem;
+    flex: 1 1 0;
+  }
+
+  .col2 {
+    width: 50%;
+    flex: 1 1 0;
+  }
+}
+
+.persona-grp {
   align-items: center;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  opacity: 1;
 }
 
-.persona img {
-  height: 30%;
-  margin-right: 2rem;
-  width: 30%;
+.persona-grp img {
+  width: 10rem;
 }
 
-.persona-grp {
+.quote {
   width: 55%;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
 }
 
-.persona h4 {
+.quote h4 {
   color: #707070;
   line-height: 2.4rem;
   margin: 1rem 0;
@@ -589,12 +596,14 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .span-img img {
-    width: 50%;
-  }
-
   .span-img {
     display: flex;
+    padding: 0 8rem;
+  }
+
+  .span-img img {
+    padding: 0 1rem;
+    width: 50%;
   }
 }
 
@@ -619,39 +628,34 @@ footer i.fas:hover, footer i.fab:hover {
 /* BIO PAGE */
 .bio {
   display: grid;
-  grid-area: content;
   grid-gap: 2rem;
   grid-template-areas:
     "section1"
     "section2"
     "section3"
     "section4";
-  grid-template-columns: auto-fit;
   overflow: hidden;
   padding: 0 2.4rem;
-  place-items: stretch stretch;
+  margin-bottom: 10rem;
 }
 
-@media screen and (min-width: 651px) {
+@media only screen and (min-width: 651px) {
   .bio {
-    align-items: flex-start;
-    grid-gap: 2rem 4rem;
-    grid-template-columns: 6fr 4fr;
-    grid-template-areas:
-      "section2 section1"
-      "section3 section4";
-    grid-template-rows: auto-fill;
+    padding: 0 12rem;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .bio {
-    grid-column-gap: 6rem;
-    grid-template-columns: 2fr 1fr;
+    grid-gap: 3rem 5rem;
     grid-template-areas:
       "section2 section1"
       "section3 section4"
       "section3 section4";
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-rows: 30rem 40rem;
+    padding: 0 8rem;
+    place-items: start stretch;
   }
 }
 
@@ -672,14 +676,48 @@ footer i.fas:hover, footer i.fab:hover {
 .section1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   grid-area: section1;
 }
 
-@media only screen and (min-width: 451px) and (max-width: 651px){
+@media only screen and (min-width: 900px) {
   .section1 {
-    margin: 0 8rem;
+    max-width: 30rem;
   }
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+@media only screen and (min-width: 900px) {
+  .section2 {
+    max-width: 50rem;
+  }
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+@media only screen and (min-width: 900px) {
+  .section3 {
+    max-width: 50rem;
+  }
+}
+
+.section4 {
+  grid-area: section4;
+}
+
+@media only screen and (min-width: 900px) {
+  .section4 {
+    max-width: 30rem;
+  }
+}
+
+.profile {
+  width: 100%;
 }
 
 .resume-btn {
@@ -687,20 +725,24 @@ footer i.fas:hover, footer i.fab:hover {
   width: 100%;
 }
 
-.profile {
-  width: 100%;
+@media only screen and (min-width: 449px) {
+  .profile {
+    width: 27rem;
+  }
+
+  .resume-btn {
+    width: 27rem;
+  }
 }
 
-.section2 {
-  grid-area: section2;
-}
+@media only screen and (min-width: 900px) {
+  .profile {
+    width: 18rem;
+  }
 
-.section3 {
-  grid-area: section3;
-}
-
-.section4 {
-  grid-area: section4;
+  .resume-btn {
+    width: 18rem;
+  }
 }
 
 /* CONTACT PAGE */
@@ -716,6 +758,7 @@ footer i.fas:hover, footer i.fab:hover {
       ". form .";
     grid-template-columns: 1fr fit-content(40rem) 1fr;
     grid-template-rows: auto-fit;
+    margin-top: 8rem;
     place-items: stretch stretch;
   }
 }
