@@ -212,7 +212,7 @@ header {
 .hero-header {
   font-family: "Poppins";
   font-size: 3.4rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
   overflow: hidden;
 }
@@ -276,7 +276,7 @@ main {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .project {
     align-items: center;
     display: flex;
@@ -284,9 +284,9 @@ main {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .project {
-    padding: 10rem;
+    padding: 12rem 10rem;
   }
 }
 
@@ -294,11 +294,11 @@ main {
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .proj-info {
     max-width: 45%;
     margin: 0;
-    padding-left: 3rem;
+    padding-left: 4rem;
   }
 }
 
@@ -308,9 +308,15 @@ main {
   text-align: left;
 }
 
-.proj-info h3, .proj-info p {
+.proj-info h3 {
   color: var(--white);
-  line-height: 1.7rem;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.proj-info p {
+  color: var(--white);
+  line-height: 1.8rem;
   text-align: left;
 }
 
@@ -322,7 +328,7 @@ main {
   width: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .mockup {
     max-width: 45rem;
   }
@@ -545,13 +551,18 @@ footer i.fas:hover, footer i.fab:hover {
   }
 
   .col1 {
-    padding-right: 4rem;
     flex: 1 1 0;
+    padding-right: 4rem;
   }
 
   .col2 {
-    width: 50%;
+    align-content: center;
     flex: 1 1 0;
+    width: 50%;
+  }
+
+  .col2-shrink img {
+    width: 67%;
   }
 }
 
@@ -647,14 +658,14 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media only screen and (min-width: 900px) {
   .bio {
-    grid-gap: 3rem 5rem;
+    grid-gap: 3rem 6rem;
     grid-template-areas:
       "section2 section1"
       "section3 section4"
       "section3 section4";
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-template-rows: 30rem 40rem;
-    padding: 0 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    grid-template-rows: 28rem 40rem;
+    padding: 0 9rem;
     place-items: start stretch;
   }
 }
@@ -737,11 +748,11 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media only screen and (min-width: 900px) {
   .profile {
-    width: 18rem;
+    width: 16rem;
   }
 
   .resume-btn {
-    width: 18rem;
+    width: 16rem;
   }
 }
 
