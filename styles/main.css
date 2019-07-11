@@ -20,7 +20,7 @@ h1 {
 h2 {
   color: var(--white);
   font-family: "Poppins";
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   font-weight: 600;
   line-height: 3rem;
 }
@@ -52,26 +52,27 @@ p {
 
 li {
   color: var(--black);
+  font-family: "Raleway";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.7rem;
 }
 
 .boldtext {
-  color: rgba(77, 77, 77, .7);
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2.6rem;
+  font-weight: 500;
 }
 
 .underline {
   border-bottom: 2px solid;
 }
 
+/* links */
 a:link, a:visited, a:active, a:hover {
   color: var(--salmon);
   font-family: "Poppins";
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -118,7 +119,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 
-/* HOME PAGE */
+/* structure */
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -199,67 +200,6 @@ header {
   }
 }
 
-.hero {
-  margin-top: 9rem;
-}
-
-@media screen and (min-width: 700px) {
-  .hero {
-    margin-top: 12rem;
-  }
-}
-
-.hero-header {
-  font-family: "Poppins";
-  font-size: 3.4rem;
-  font-weight: 700;
-  line-height: normal;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 700px) {
-  .hero-header {
-    font-size: 5.5rem;
-  }
-}
-
-.hero-subheader {
-  font-family: "Poppins";
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 3rem;
-  margin-top: 1.5rem;
-}
-
-@media screen and (min-width: 700px) {
-  .hero-subheader {
-    font-size: 4.2rem;
-    line-height: 4.4rem;
-  }
-}
-
-.see-work {
-  display: flex;
-  flex-direction: column;
-  margin-top: 7rem;
-  opacity: .8;
-  text-align: center;
-}
-
-.see-work:hover {
-  opacity: 1;
-  transition: 0.5s ease;
-}
-
-.see-work a {
-  color: var(--white);
-}
-
-.see-work i.fas {
-  font-size: 2.4rem;
-}
-
 main {
   grid-area: content;
   justify-content: center;
@@ -267,79 +207,6 @@ main {
 
 .main-margin {
   margin-bottom: 16rem;
-}
-
-.project {
-  background: rgba(255, 255, 255, .1);
-  margin-top: 5rem;
-  padding: 3rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 750px) {
-  .project {
-    align-items: center;
-    display: flex;
-    padding: 10rem 3rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .project {
-    padding: 12rem 10rem;
-  }
-}
-
-.proj-info {
-  margin-top: 1.5rem;
-}
-
-@media screen and (min-width: 750px) {
-  .proj-info {
-    max-width: 45%;
-    margin: 0;
-    padding-left: 4rem;
-  }
-}
-
-.proj-info h2 {
-  font-size: 3rem;
-  line-height: 1.4rem;
-  text-align: left;
-}
-
-.proj-info h3 {
-  color: var(--white);
-  line-height: 2.4rem;
-  text-align: left;
-}
-
-.proj-info p {
-  color: var(--white);
-  line-height: 1.8rem;
-  text-align: left;
-}
-
-.project:hover .overlay {
-  opacity: 1;
-}
-
-.mockup {
-  width: 100%;
-}
-
-@media screen and (min-width: 750px) {
-  .mockup {
-    max-width: 45rem;
-  }
-
-  .hifi-mockup {
-    padding: 0 8rem;
-  }
-
-  .cs-btn {
-    width: 100%;
-  }
 }
 
 footer {
@@ -370,13 +237,149 @@ footer > ul > li {
 
 i.fas, i.fab {
   color: var(--white);
-  font-size: 3rem;
-  opacity: .8;
+  font-size: 3.2rem;
+  opacity: .9;
 }
 
 footer i.fas:hover, footer i.fab:hover {
   opacity: 1;
   transition: 0.5s ease;
+}
+
+/* HOMEPAGE */
+.hero {
+  margin-top: 9rem;
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    margin-top: 12rem;
+  }
+}
+
+.hero-header h1 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: normal;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-header {
+    font-size: 5.5rem;
+  }
+}
+
+.hero-subheader h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 3rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-subheader {
+    font-size: 4.2rem;
+    line-height: 4.4rem;
+  }
+}
+
+.sub-bold {
+  font-weight: 800;
+}
+
+.see-work {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  opacity: .8;
+  text-align: center;
+}
+
+.see-work:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.see-work a {
+  color: var(--white);
+}
+
+.see-work i.fas {
+  font-size: 2.4rem;
+}
+
+.project {
+  background: rgba(255, 255, 255, .1);
+  margin-top: 5rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+  .project {
+    padding: 5rem 9rem 3rem 9rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .project {
+    align-items: center;
+    display: flex;
+    padding: 10rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project {
+    padding: 12rem 10rem;
+  }
+}
+
+.proj-info {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .proj-info {
+    max-width: 45%;
+    margin: 0;
+    padding-left: 4rem;
+  }
+
+  .proj-btn {
+    width: 100%;
+  }
+}
+
+.proj-info h2 {
+  font-size: 3rem;
+  line-height: 1.4rem;
+  text-align: left;
+}
+
+.proj-info h3 {
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: left;
+}
+
+.proj-info p {
+  color: var(--white);
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+.mockup {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .mockup {
+    max-width: 45rem;
+  }
 }
 
 /* CASE STUDY PAGE */
@@ -436,6 +439,8 @@ footer i.fas:hover, footer i.fab:hover {
 @media screen and (min-width: 651px) {
   .cs-info {
     justify-content: space-around;
+    padding: 3rem 0;
+
   }
 }
 
@@ -489,7 +494,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 .sub-menu a:visited, .sub-menu a:link {
   color: var(--white);
-  opacity: .9;
+  opacity: .8;
 }
 
  .sub-menu a:active, .sub-menu a:hover {
@@ -532,7 +537,6 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .case-study li {
-  font-family: "Raleway";
   line-height: 2rem;
   margin: 1rem 0;
 }
@@ -560,9 +564,17 @@ footer i.fas:hover, footer i.fab:hover {
     flex: 1 1 0;
     width: 50%;
   }
+}
 
+.col2-shrink img {
+  left: 25%;
+  width: 50%;
+}
+
+@media screen and (min-width: 700px) {
   .col2-shrink img {
-    width: 67%;
+    left: 0%;
+    width: 70%;
   }
 }
 
@@ -598,15 +610,21 @@ footer i.fas:hover, footer i.fab:hover {
   font-weight: 500;
 }
 
+@media screen and (min-width: 650px) {
+  .hifi-mockup {
+    padding: 0 8rem;
+  }
+}
+
 .span-img {
   text-align: center;
 }
 
 .span-img img {
-  width: 70%;
+  width: 50%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
   .span-img {
     display: flex;
     padding: 0 8rem;
