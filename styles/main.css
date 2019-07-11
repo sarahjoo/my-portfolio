@@ -612,7 +612,13 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 650px) {
   .hifi-mockup {
-    padding: 0 8rem;
+    padding: 0 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hifi-mockup {
+    padding: 0 12rem;
   }
 }
 
@@ -620,16 +626,25 @@ footer i.fas:hover, footer i.fab:hover {
   text-align: center;
 }
 
+@media screen and (min-width: 650px) {
+  .span-img {
+    display: flex;
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .span-img {
+    display: flex;
+    padding: 0 16rem;
+  }
+}
+
 .span-img img {
   width: 50%;
 }
 
 @media screen and (min-width: 650px) {
-  .span-img {
-    display: flex;
-    padding: 0 8rem;
-  }
-
   .span-img img {
     padding: 0 1rem;
     width: 50%;
