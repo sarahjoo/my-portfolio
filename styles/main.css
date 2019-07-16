@@ -1,9 +1,9 @@
 /* colors */
 :root {
   --blue: rgba(26, 23, 89, 1);
-  --salmon: rgba(226, 83, 83, 1);
+  --salmon: rgba(232, 90, 90, 1);
   --purple: rgba(89, 33, 81, 1);
-  --black: rgba(77, 77, 77, 1);
+  --black: rgba(30, 30, 30, 1);
   --white: rgba(255, 255, 255, 1);
   --fadewhite: rgba(255, 255, 255, .7);
 }
@@ -11,7 +11,7 @@
 /* typography */
 h1 {
   color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", "Tahoma";
   font-size: 4rem;
   font-weight: 700;
   line-height: 6rem;
@@ -47,7 +47,7 @@ p {
   font-family: "Raleway";
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
 }
 
 li {
@@ -82,7 +82,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .button {
-  background-color: none;
+  background-color: rgba(77, 77, 77, 0);
   border: .17rem solid;
   color: var(--salmon);
   cursor: pointer;
@@ -105,8 +105,8 @@ a:link, a:visited, a:active, a:hover {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-timing-function: ease-out;
@@ -148,7 +148,7 @@ html {
       ". header ."
       "content content content"
       "footer footer footer";
-    grid-template-columns: 1fr fit-content(80rem) 1fr;
+    grid-template-columns: 1fr fit-content(75rem) 1fr;
     grid-template-rows: auto-fit;
     overflow: hidden;
   }
@@ -168,19 +168,27 @@ nav {
   width: 100%;
 }
 
-.sticky + header {
-  padding-top: 20rem;
+.sticky + .hero {
+  padding-top: 18rem;
+}
+
+.sticky + .case-study {
+  padding-top: 4rem;
+}
+
+.sticky + main {
+  padding-top: 5rem;
 }
 
 .logo {
   margin-top: .8rem;
-  width: 3.9rem;
+  width: 3.5rem;
 }
 
 .stars {
   position: absolute;
   top: 1rem;
-  left: 6.8rem;
+  left: 6.2rem;
 }
 
 .navlinks {
@@ -191,7 +199,7 @@ nav {
 .navlinks a:link, .navlinks a:visited {
   color: var(--white);
   margin-left: 1.4rem;
-  opacity: .8;
+  opacity: .85;
 }
 
 .navlinks a:active, .navlinks a:hover {
@@ -201,13 +209,7 @@ nav {
 
 header {
   grid-area: header;
-  margin: 0 3.4rem;
-}
-
-@media screen and (min-width: 920px) {
-  header {
-    max-width: 80rem;
-  }
+  margin: 2rem 3.4rem;
 }
 
 main {
@@ -235,7 +237,7 @@ footer > ul > li {
 }
 
 .chat-bubble {
-  margin-left: -17rem;
+  margin-left: -16rem;
   position: absolute;
   bottom: 5.8rem;
 }
@@ -246,7 +248,7 @@ footer > ul > li {
 
 i.fas, i.fab {
   color: var(--white);
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   opacity: .9;
 }
 
@@ -264,7 +266,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 700px) {
   .hero {
-    margin-top: 6rem;
+    margin-top: 18rem;
   }
 }
 
@@ -304,8 +306,7 @@ footer i.fas:hover, footer i.fab:hover {
 .see-work {
   display: flex;
   flex-direction: column;
-  line-height: 3rem;
-  margin-top: 6rem;
+  margin-top: 5rem;
   opacity: .8;
   text-align: center;
 }
@@ -356,7 +357,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 750px) {
   .proj-info {
-    max-width: 40%;
+    max-width: 45%;
     margin: 0;
     padding-left: 4rem;
   }
@@ -405,19 +406,19 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 651px) {
   .cs-header {
-    margin: 0 14rem;
+    margin: 0 10rem;
   }
 }
 
 @media screen and (min-width: 860px) {
   .cs-header {
-    margin: 0 26rem;
+    margin: 0 20rem;
   }
 }
 
 @media screen and (min-width: 1100px) {
   .cs-header {
-    margin: 0 36rem;
+    margin: 0 28rem;
   }
 }
 
@@ -501,7 +502,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 773px) {
   #stickyMenu {
-    background: rgba(226, 83, 83, .95);
+    background: rgba(232, 90, 90, .93);
     display: flex;
     grid-area: sub-menu;
     height: 4rem;
@@ -597,7 +598,7 @@ footer i.fas:hover, footer i.fab:hover {
 
   .col1 {
     flex: 1 1 0;
-    padding-right: 10rem;
+    padding-right: 5rem;
     padding-bottom: 0;
   }
 
@@ -732,11 +733,12 @@ footer i.fas:hover, footer i.fab:hover {
     "section1"
     "section2"
     "section3"
-    "section4";
+    "section4"
+    "section5";
   overflow: hidden;
   padding: 0 2.4rem;
-  margin-top: 8rem;
-  margin-bottom: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 16rem;
 }
 
 @media only screen and (min-width: 651px) {
@@ -747,11 +749,11 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media only screen and (min-width: 900px) {
   .bio {
-    grid-gap: 3rem 6rem;
+    grid-gap: 3rem 10rem;
     grid-template-areas:
       "section2 section1"
-      "section3 section4"
-      "section3 section4";
+      "section3 section5"
+      "section4 section5";
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
     grid-template-rows: auto-fit;
     padding: 0 9rem;
@@ -780,40 +782,16 @@ footer i.fas:hover, footer i.fab:hover {
   grid-area: section1;
 }
 
-@media only screen and (min-width: 900px) {
-  .section1 {
-    max-width: 30rem;
-  }
-}
-
 .section2 {
   grid-area: section2;
-}
-
-@media only screen and (min-width: 900px) {
-  .section2 {
-    max-width: 50rem;
-  }
 }
 
 .section3 {
   grid-area: section3;
 }
 
-@media only screen and (min-width: 900px) {
-  .section3 {
-    max-width: 50rem;
-  }
-}
-
 .section4 {
   grid-area: section4;
-}
-
-@media only screen and (min-width: 900px) {
-  .section4 {
-    max-width: 30rem;
-  }
 }
 
 .profile {
@@ -837,17 +815,17 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media only screen and (min-width: 900px) {
   .profile {
-    width: 16rem;
+    width: 22rem;
   }
 
   .resume-btn {
-    width: 16rem;
+    width: 22rem;
   }
 }
 
 /* CONTACT PAGE */
 .contact {
-  margin: 1rem 2.4rem;
+  margin: 3rem 2.4rem;
 }
 
 @media screen and (min-width: 451px) {
