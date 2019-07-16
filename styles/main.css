@@ -148,7 +148,7 @@ html {
       ". header ."
       "content content content"
       "footer footer footer";
-    grid-template-columns: 1fr fit-content(75rem) 1fr;
+    grid-template-columns: 1fr fit-content(80rem) 1fr;
     grid-template-rows: auto-fit;
     overflow: hidden;
   }
@@ -162,14 +162,15 @@ nav {
 }
 
 .sticky {
-  background: linear-gradient(180deg, rgba(11,20,40,1) 0%, rgba(11,20,40,0) 100%););
+  background: linear-gradient(180deg, rgba(11,20,40,.8) 0%, rgba(11,20,40,0) 100%););
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .sticky + .hero {
-  padding-top: 18rem;
+  padding-top: 30rem;
 }
 
 .sticky + .case-study {
@@ -204,7 +205,7 @@ nav {
 
 .navlinks a:active, .navlinks a:hover {
   opacity: 1;
-  transition: 0.8s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 header {
@@ -261,19 +262,19 @@ footer i.fas:hover, footer i.fab:hover {
 .hero {
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  margin-top: 12rem;
 }
 
 @media screen and (min-width: 700px) {
   .hero {
-    margin-top: 18rem;
+    margin-top: 22rem;
   }
 }
 
 .hero-header {
   font-size: 3.5rem;
   font-weight: 600;
-  line-height: normal;
+  line-height: 4.4rem;
   overflow: hidden;
 }
 
@@ -287,7 +288,7 @@ footer i.fas:hover, footer i.fab:hover {
   color: #fff;
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 3.8rem;
+  line-height: 3rem;
   margin-top: 1.5rem;
 }
 
@@ -295,18 +296,19 @@ footer i.fas:hover, footer i.fab:hover {
   .hero-subheader {
     font-size: 4rem;
     font-weight: 200;
-    line-height: 5.5rem;
+    line-height: 5rem;
   }
 }
 
 .sub-bold {
-  font-weight: 800;
+  font-size: 4.2rem;
+  font-weight: 700;
 }
 
 .see-work {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 4rem;
   opacity: .8;
   text-align: center;
 }
@@ -543,7 +545,7 @@ footer i.fas:hover, footer i.fab:hover {
 .case-study {
   background: var(--white);
   grid-area: case-study;
-  padding: .1rem 2.4rem 14rem 2.4rem;
+  padding: 1rem 2.4rem 14rem 2.4rem;
 }
 
 @media screen and (min-width: 951px) {
@@ -728,7 +730,7 @@ footer i.fas:hover, footer i.fab:hover {
 /* BIO PAGE */
 .bio {
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   grid-template-areas:
     "section1"
     "section2"
@@ -756,7 +758,7 @@ footer i.fas:hover, footer i.fab:hover {
       "section4 section5";
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
     grid-template-rows: auto-fit;
-    padding: 0 9rem;
+    padding: 0 12rem;
     place-items: start stretch;
   }
 }
@@ -834,9 +836,9 @@ footer i.fas:hover, footer i.fab:hover {
     grid-template-areas:
       ". heading ."
       ". form .";
-    grid-template-columns: 1fr fit-content(36rem) 1fr;
+    grid-template-columns: 1fr fit-content(34rem) 1fr;
     grid-template-rows: auto-fit;
-    margin-top: 8rem;
+    margin-top: 6rem;
     place-items: stretch stretch;
   }
 }
