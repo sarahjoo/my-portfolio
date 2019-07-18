@@ -33,7 +33,7 @@ var basicScrollTop = function () {
   var TopscrollTo = function () {
     if(window.scrollY!=0) {
       setTimeout(function() {
-        window.scrollTo(0,window.scrollY-50);
+        window.scrollTo(0,window.scrollY-1000);
         TopscrollTo();
       }, 5);
     }
