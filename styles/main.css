@@ -5,7 +5,7 @@
   --salmon: rgb(229, 143, 152); /* #E58F98 */
   --purple: rgba(89, 33, 81); /* #592151 */
   --black: rgba(30, 30, 30);
-  --white: rgb(245, 244, 233);
+  --white: rgb(245, 244, 240);
 }
 
 /* typography */
@@ -639,7 +639,7 @@ footer i.fas:hover, footer i.fab:hover {
 @media screen and (min-width: 700px) {
   .col1 {
     flex: 1 1 0;
-    padding-right: 5rem;
+    padding-right: 8rem;
     padding-bottom: 0;
   }
 
