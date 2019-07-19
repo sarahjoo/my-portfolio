@@ -186,12 +186,16 @@ nav {
   z-index: 1;
 }
 
-.sticky + .hero {
-  padding-top: 28rem;
+.sticky + header {
+  padding-top: 8rem;
 }
 
 .sticky + .case-study {
   padding-top: 2rem;
+}
+
+.sticky + main {
+  padding-top: 10rem;
 }
 
 .logo {
@@ -292,7 +296,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 701px) {
   .hero {
-    padding: 28rem 2.4rem 0 2.4rem;
+    padding: 20rem 2.4rem 0 2.4rem;
   }
 }
 
@@ -380,7 +384,7 @@ footer i.fas:hover, footer i.fab:hover {
   .project {
     align-items: center;
     display: flex;
-    padding: 10rem 4rem;
+    padding: 14rem 4rem;
   }
 }
 
@@ -504,29 +508,99 @@ footer i.fas:hover, footer i.fab:hover {
 
 .case-study-content {
   grid-area: content;
-  grid-template-columns: auto-fit;
-  grid-template-areas:
-    "sub-menu"
-    "case-study";
   overflow: hidden;
-  place-items: stretch stretch;
+}
+
+#menuToggle {
+  display: block;
+  position: fixed;
+  opacity: 0;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: 0.5s linear;
+}
+
+#menuToggle.is-visible {
+  transition: 0.8s linear;
+  opacity:1;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: rgb(28, 25, 94, .5);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* Hamburger transforms into a crossmark.*/
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgb(200, 200, 200);
+}
+
+/* Hide the middle one.*/
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* Last slice goes the other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
 }
 
 #mobile-menu {
-  background: var(--red-pink);
-  display: flex;
-  grid-area: sub-menu;
-  justify-content: space-around;
-  padding: 3rem 0;
-  text-align: center;
-  z-index: 1;
+  height: 100%;
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 11rem 5rem 100rem 5rem;
+  right: -10rem;
+  background: linear-gradient(180deg, rgba(11,20,40, .95) 0%, rgba(3,25,88, .95) 100%);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #mobile-menu li {
-  color: var(--white);
   font-weight: 500;
   line-height: 2.2rem;
   opacity: .9;
+  padding: 1rem 0;
 }
 
 #mobile-menu a:visited, #mobile-menu a:link {
@@ -534,9 +608,15 @@ footer i.fas:hover, footer i.fab:hover {
   opacity: .9;
 }
 
-#mobile-menu a:hover {
+#mobile-menu a:active, #mobile-menu a:hover {
+  color: var(--salmon);
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.4s;
+}
+
+/* Let slide it in from the left */
+#menuToggle input:checked ~ ul {
+  transform: none;
 }
 
 #stickyMenu {
@@ -576,6 +656,10 @@ footer i.fas:hover, footer i.fab:hover {
   #stickyMenu a:active, #stickyMenu a:hover {
     opacity: 1;
     transition: 0.8s;
+  }
+
+  #menuToggle {
+    display: none;
   }
 
   #mobile-menu {
@@ -759,26 +843,33 @@ footer i.fas:hover, footer i.fab:hover {
   margin-top: 2rem;
 }
 
-#goTop {
-  bottom: 1.5rem;
-  right: 0;
-  z-index: 1;
-  cursor: pointer;
-  position: fixed;
-  padding: 1rem 1.2rem 1rem 1rem;
-  opacity: 0;
-  background: rgba(77, 77, 77, .2);
-  border:none;
-  transition: opacity 0.5s linear;
-}
-
 #goTop.is-visible {
-  opacity:1;
+  opacity:0;
 }
 
-#goTop i.fas {
-  color: var(--black);
-  font-size: 2.4rem;
+@media screen and (min-width: 768px) {
+  #goTop {
+    display: visible;
+    bottom: 1.5rem;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+    padding: 1rem 1.2rem 1rem 1rem;
+    opacity: 0;
+    background: rgba(77, 77, 77, .2);
+    border:none;
+    transition: opacity 0.5s linear;
+  }
+
+  #goTop.is-visible {
+    opacity:1;
+  }
+
+  #goTop i.fas {
+    color: var(--black);
+    font-size: 2.4rem;
+  }
 }
 
 /* BIO PAGE */
@@ -832,7 +923,7 @@ footer i.fas:hover, footer i.fab:hover {
       ". section4";
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
     grid-template-rows: auto-fill;
-    padding: 0 12rem;
+    padding: 12rem;
     place-items: start stretch;
   }
 }
@@ -885,7 +976,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 .resume-btn {
   width: 100%;
-  margin: 2rem 0;
+  margin: 1.4rem 0;
   max-width: 25rem;
 }
 

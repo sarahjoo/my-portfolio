@@ -13,7 +13,7 @@
   <body>
     <div class="cs-container">
       <nav>
-        <a href="index.html"><img class="logo" src="images/logo.svg" alt="personal logo"></a>
+        <a name="top" href="index.html"><img class="logo" src="images/logo.svg" alt="personal logo"></a>
         <img class="stars" src="images/stars.svg" alt="stars motif">
         <ul class="navlinks">
           <li><a href="about.html">About</a></li>
@@ -50,21 +50,25 @@
           </ul>
         </section>
       </header>
-      <span id="position"></span>
       <main class="case-study-content">
-        <div id="mobile-menu">
-          <ul>
+        <div id="menuToggle">
+          <!-- A hidden checkbox is used as click receiver,
+          to use the :checked selector on it. -->
+          <input type="checkbox" />
+          <!-- Some spans to act as a hamburger. -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="mobile-menu">
             <li><a href="#research">Research</a></li>
-            <li>-</li>
             <li><a href="#ia">Information Architecture</a></li>
-            <li>-</li>
             <li><a href="#branding">Branding</a></li>
-            <li>-</li>
             <li><a href="#mockups">Mockups</a></li>
-            <li>-</li>
             <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#top">Back to Top</a></li>
           </ul>
         </div>
+        <span id="position"></span>
         <div id="stickyMenu">
           <ul>
             <li><a href="#research">Research</a></li>
@@ -250,7 +254,7 @@
               <p>Being close to age 60, one of the participants couldn’t complete some of the tasks because she didn’t know what the icons meant. That was my aha! moment.</p>
               <p>As a solution, I added hovering labels to the icons and other minor changes, which lead to the final iteration of the product.</p>
               <div class="btn">
-                <a class="button sink" href="https://drive.google.com/open?id=1UZcYY1fl4OemdclLeEGGg5IhZf7IWIm6" target="_blank">View All Mockups</a>
+                <a class="button sink" href="https://drive.google.com/open?id=1UZcYY1fl4OemdclLeEGGg5IhZf7IWIm6" target="_blank">View Mockups</a>
               </div>
             </section>
             <section class="col2">

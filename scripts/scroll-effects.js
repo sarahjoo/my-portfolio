@@ -45,3 +45,22 @@ var basicScrollTop = function () {
 };
 
 basicScrollTop();
+
+// Mobile menu on scroll
+var scrollMenu = function () {
+  // This is the button
+  var hamburger = document.querySelector('#menuToggle');
+  // Button is revealed at scroll position
+  var btnReveal = function () {
+    var position = document.querySelector('#position');
+    if (window.scrollY >= 900) {
+      hamburger.classList.add('is-visible');
+    } else {
+      hamburger.classList.remove('is-visible');
+    }
+  }
+  // Event listeners
+  window.addEventListener('scroll', btnReveal);
+};
+
+scrollMenu();
