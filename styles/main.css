@@ -273,6 +273,13 @@ footer i.fas:hover, footer i.fab:hover {
   transition: 0.5s ease;
 }
 
+.caption {
+  color: var(--white);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 9rem;
+}
+
 /* HOMEPAGE */
 .hero {
   display: flex;
