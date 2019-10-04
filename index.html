@@ -14,12 +14,11 @@
   <body>
     <div class="container">
       <nav id="stickyNav">
-        <a href="index.html"><img class="logo" src="images/logo.svg" alt="personal logo"></a>
-        <img class="stars" src="images/stars.svg" alt="stars motif">
+        <a href="index.html"><img class="logo sink" src="images/logo.svg" alt="personal logo"></a>
         <ul class="navlinks">
-          <li><a href="about.html">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="sink"><a href="about.html">About</a></li>
+          <li class="sink"><a href="#work">Work</a></li>
+          <li class="sink"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <header>
@@ -35,15 +34,28 @@
       <main class="main-margin">
         <a name="work"></a>
         <div class="project">
-          <a href="project1.html"><img class="mockup" src="images/case-study-1/photostache-mockup.png" alt="photostache mockup"></a>
-          <section class="proj-info">
+          <div class="proj-col1">
+            <a href="project1.html"><img class="mockup" src="images/case-study-1/photostache-mockup.png" alt="photostache mockup"></a>
+          </div>
+          <div class="proj-col2">
             <h2>Photostache</h2>
             <h3>Research, UX/UI Design, Branding</h3>
             <p>A fun and secure media cloud storage service for the everyday photo-taker.</p><br>
             <div class="btn-light">
               <a class="button sink proj-btn" href="project1.html">View Case Study</a>
             </div>
-          </section>
+          </div>
+        </div>
+        <div class="project">
+          <div class="proj-col1">
+            <img class="mockup" src="images/case-study-2/mockups.png" alt="tripbee mockup">
+          </div>
+          <div class="proj-col2">
+            <h2>Tripbee</h2>
+            <h3>Research, UX/UI Design, Branding</h3>
+            <p>A travel app that provides unique, authentic tips from locals.</p><br>
+            <h4>Case study coming soon!</h4>
+          </div>
         </div>
       </main>
       <footer>
