@@ -5,7 +5,7 @@
   --salmon: rgb(229, 143, 152); /* #E58F98 */
   --purple: rgba(89, 33, 81); /* #592151 */
   --black: rgba(38, 27, 30); /* #261B1E */
-  --white: rgb(249, 249, 245); /*#F7F6F0 */
+  --white: rgb(249, 249, 243); /*#F7F6F0 */
 }
 
 /* typography */
@@ -179,7 +179,7 @@ nav {
 }
 
 .sticky {
-  background: linear-gradient(180deg, rgb(249, 249, 245, 1) 10%, rgb(249, 249, 245, .75) 100%););
+  background: linear-gradient(180deg, rgb(249, 249, 243, 1) 10%, rgb(249, 249, 243, .75) 100%););
   position: fixed;
   top: 0;
   width: 100%;
