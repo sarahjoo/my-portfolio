@@ -1,16 +1,16 @@
 /* colors */
 :root {
-  --green: rgb(81, 138, 124, .9); /* #518A7C */
-  --red-pink: rgb(186, 78, 105); /* #BA4E69 */
+  --green: rgb(61, 99, 102, .95); /* #518A7C */
+  --red-pink: rgb(197, 73, 104); /* #BA4E69 */
   --salmon: rgb(229, 143, 152); /* #E58F98 */
   --purple: rgba(89, 33, 81); /* #592151 */
   --black: rgba(38, 27, 30); /* #261B1E */
-  --white: rgb(247, 246, 240); /*#F7F6F0 */
+  --white: rgb(249, 249, 245); /*#F7F6F0 */
 }
 
 /* typography */
 h1 {
-  color: var(--red-pink);
+  color: var(--green);
   font-family: "Poppins";
   font-size: 4rem;
   font-weight: 700;
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  color: var(--red-pink);
+  color: var(--green);
   font-family: "Poppins";
   font-size: 2.7rem;
   font-weight: 600;
@@ -35,7 +35,7 @@ h3 {
 }
 
 h4 {
-  color: var(--red-pink);
+  color: var(--green);
   font-family: "Poppins";
   font-size: 1.8rem;
   font-weight: 500;
@@ -179,7 +179,7 @@ nav {
 }
 
 .sticky {
-  background: linear-gradient(180deg, rgb(247, 246, 240, 1) 10%, rgb(247, 246, 240, .75) 100%););
+  background: linear-gradient(180deg, rgb(249, 249, 245, 1) 10%, rgb(249, 249, 245, .75) 100%););
   position: fixed;
   top: 0;
   width: 100%;
@@ -275,9 +275,9 @@ footer i.fas:hover, footer i.fab:hover {
 
 .caption {
   color: var(--white);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   position: absolute;
-  top: 9rem;
+  top: 10rem;
 }
 
 /* HOMEPAGE */
@@ -294,6 +294,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .hero-header {
+  color: var(--green);
   font-size: 3rem;
   font-weight: 400;
   line-height: 4.8rem;
@@ -308,6 +309,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .hero-bold {
+  color: var(--green);
   font-size: 3.8rem;
   font-weight: 600;
 }
@@ -318,7 +320,7 @@ footer i.fas:hover, footer i.fab:hover {
   }
 }
 .hero-subheader {
-  color: var(--red-pink);
+  color: var(--green);
   font-size: 2.1rem;
   font-weight: 200;
   line-height: 4.4rem;
@@ -334,6 +336,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .sub-bold {
+  color: var(--green);
   font-size: 3rem;
   font-weight: 700;
 }
@@ -673,13 +676,13 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .case-study h2 {
-  color: var(--red-pink);
+  color: var(--green);
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 .case-study h3,.case-study h4 {
-  color: var(--red-pink);
+  color: var(--green);
   margin-bottom: .5rem;
 }
 
@@ -919,7 +922,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .bio h3 {
-  color: var(--red-pink);
+  color: var(--green);
   font-size: 2.2rem;
   font-weight: 500;
   line-height: normal;
@@ -940,7 +943,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .section1 h3 {
-  color: var(--red-pink);
+  color: var(--green);
   margin-top: 0;
 }
 
