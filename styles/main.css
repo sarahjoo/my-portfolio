@@ -637,7 +637,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 768px) {
   #stickyMenu {
-    background: rgb(81, 138, 124, .9);
+    background: rgba(38, 86, 90, .9);
     display: flex;
     grid-area: sub-menu;
     height: 3rem;
