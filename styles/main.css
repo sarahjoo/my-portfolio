@@ -72,8 +72,8 @@ li {
 a:link, a:visited, a:active, a:hover {
   color: var(--red-pink);
   font-family: "Montserrat";
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -204,7 +204,7 @@ nav {
 
 .logo {
   margin-top: .7rem;
-  width: 2.3rem;
+  width: 2.5rem;
 }
 
 .navlinks {
