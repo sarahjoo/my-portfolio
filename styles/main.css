@@ -11,7 +11,7 @@
 /* typography */
 h1 {
   color: var(--green);
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-size: 4rem;
   font-weight: 700;
   line-height: 6rem;
@@ -19,7 +19,7 @@ h1 {
 
 h2 {
   color: var(--green);
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-size: 2.7rem;
   font-weight: 600;
   line-height: 3rem;
@@ -27,32 +27,32 @@ h2 {
 
 h3 {
   color: var(--black);
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-size: 2.4rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 3.6rem;
   margin: 1.3rem 0;
 }
 
 h4 {
   color: var(--green);
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2.6rem;
 }
 
 p {
   color: var(--black);
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-size: 1.7rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.7rem;
 }
 
 li {
   color: var(--black);
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 2.5rem;
@@ -140,7 +140,7 @@ a:link, a:visited, a:active, a:hover {
 html {
   background: var(--white);
   font-size: 10px;
-  font-family: "Poppins", "Raleway", sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+  font-family: "Poppins", "Montserrat", sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
@@ -183,7 +183,7 @@ nav {
 }
 
 .sticky {
-  background: linear-gradient(180deg, rgb(249, 249, 243, 1) 10%, rgb(249, 249, 243, .75) 100%););
+  background: linear-gradient(180deg, rgba(250, 254, 246, 1) 10%, rgba(250, 254, 246, .75) 100%););
   position: fixed;
   top: 0;
   width: 100%;
@@ -302,7 +302,7 @@ footer i.fas:hover, footer i.fab:hover {
 .hero-header {
   color: var(--green);
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 4.8rem;
   overflow: hidden;
 }
@@ -328,7 +328,7 @@ footer i.fas:hover, footer i.fab:hover {
 .hero-subheader {
   color: var(--green);
   font-size: 2.1rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 3.5rem;
   padding-top: .5rem;
 }
@@ -336,7 +336,6 @@ footer i.fas:hover, footer i.fab:hover {
 @media screen and (min-width: 701px) {
   .hero-subheader {
     font-size: 3.2rem;
-    font-weight: 200;
     line-height: 5rem;
   }
 }
