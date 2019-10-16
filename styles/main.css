@@ -71,7 +71,7 @@ li {
 /* links */
 a:link, a:visited, a:active, a:hover {
   color: var(--red-pink);
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-size: 1.7rem;
   font-weight: 400;
   text-decoration: none;
@@ -140,7 +140,7 @@ a:link, a:visited, a:active, a:hover {
 html {
   background: var(--white);
   font-size: 10px;
-  font-family: "Poppins", "Montserrat", sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+  font-family: "Montserrat", sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
@@ -1023,7 +1023,7 @@ form {
 input {
   background-color: #fff;
   border: #d2d2d2 1px solid;
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 300;
   height: 3.2rem;
@@ -1035,7 +1035,7 @@ input {
 textarea {
   background-color: #fff;
   border: #d2d2d2 1px solid;
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 300;
   height: 12rem;
