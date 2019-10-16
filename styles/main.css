@@ -1,11 +1,11 @@
 /* colors */
 :root {
-  --green: rgb(61, 99, 102, .95); /* #518A7C */
-  --red-pink: rgb(197, 73, 104); /* #BA4E69 */
-  --salmon: rgb(229, 143, 152); /* #E58F98 */
+  --green: rgba(38, 86, 90, 0.95); /* #2d4852 */
+  --red-pink: rgba(153, 54, 87, 1); /* #993657 */
+  --light-pink: rgba(230, 189, 184);  /* #E6BDB8 */
   --purple: rgba(89, 33, 81); /* #592151 */
   --black: rgba(38, 27, 30); /* #261B1E */
-  --white: rgb(249, 249, 243); /*#F7F6F0 */
+  --white: rgba(250, 254, 246, 1); /* #fcfcfc */
 }
 
 /* typography */
@@ -38,8 +38,8 @@ h4 {
   color: var(--green);
   font-family: "Poppins";
   font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.8rem;
+  font-weight: 600;
+  line-height: 2.6rem;
 }
 
 p {
@@ -47,7 +47,7 @@ p {
   font-family: "Raleway";
   font-size: 1.7rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 2.7rem;
 }
 
 li {
@@ -55,7 +55,7 @@ li {
   font-family: "Raleway";
   font-size: 1.7rem;
   font-weight: 400;
-  line-height: 2.7rem;
+  line-height: 2.5rem;
 }
 
 .boldtext {
@@ -72,24 +72,28 @@ li {
 a:link, a:visited, a:active, a:hover {
   color: var(--red-pink);
   font-family: "Poppins";
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btn {
-  color: var(--red-pink);
   text-align: center;
   margin: 2rem 0;
 }
 
+.btn > a {
+  color: var(--white);
+}
+
 .button {
-  background-color: rgba(77, 77, 77, 0);
-  border: .18rem solid;
+  background-color: var(--red-pink);
+  border-radius: .7rem;
   cursor: pointer;
   display: inline-block;
   font-size: 1.7rem;
-  padding: .8rem 2rem;
+  padding: 1rem 2rem;
   text-align: center;
   transition: 0.5s;
   width: 100%;
@@ -97,7 +101,7 @@ a:link, a:visited, a:active, a:hover {
 
 @media screen and (min-width: 501px) {
   .button {
-    width: 25rem;
+    width: 24rem;
   }
 }
 
@@ -108,7 +112,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .btn-light a {
-  color: var(--red-pink);
+  color: var(--white);
 }
 
 .sink {
@@ -200,7 +204,7 @@ nav {
 
 .logo {
   margin-top: .7rem;
-  width: 2.8rem;
+  width: 2.3rem;
 }
 
 .navlinks {
@@ -236,7 +240,7 @@ footer {
   background: var(--green);
   grid-area: footer;
   display: flex;
-  height: 14rem;
+  height: 10rem;
   justify-content: center;
   position: relative;
 }
@@ -247,9 +251,9 @@ footer > ul > li {
 }
 
 .chat-bubble {
-  margin-left: -17.5rem;
+  margin-left: -16.5rem;
   position: absolute;
-  bottom: 5.7rem;
+  bottom: 4.1rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -275,55 +279,57 @@ footer i.fas:hover, footer i.fab:hover {
 
 .caption {
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  opacity: .7;
   position: absolute;
-  top: 10rem;
+  top: 7rem;
 }
 
 /* HOMEPAGE */
 .hero {
   display: flex;
   flex-direction: column;
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 
 @media screen and (min-width: 701px) {
   .hero {
-    padding: 14rem 2.4rem 0 2.4rem;
+    padding: 12rem 2.4rem 0 2.4rem;
+    max-width: 60rem;
   }
 }
 
 .hero-header {
   color: var(--green);
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 4.8rem;
   overflow: hidden;
 }
 
 @media screen and (min-width: 701px) {
   .hero-header {
-    font-size: 5.6rem;
-    line-height: 8rem;
+    font-size: 4.2rem;
+    line-height: 6rem;
   }
 }
 
 .hero-bold {
   color: var(--green);
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-weight: 600;
 }
 
 @media screen and (min-width: 701px) {
   .hero-bold {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 .hero-subheader {
   color: var(--green);
   font-size: 2.1rem;
   font-weight: 200;
-  line-height: 4.4rem;
+  line-height: 3.5rem;
   padding-top: .5rem;
 }
 
@@ -331,26 +337,26 @@ footer i.fas:hover, footer i.fab:hover {
   .hero-subheader {
     font-size: 3.2rem;
     font-weight: 200;
-    line-height: 7rem;
+    line-height: 5rem;
   }
 }
 
 .sub-bold {
   color: var(--green);
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 @media screen and (min-width: 701px) {
   .sub-bold {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
 .see-work {
   display: flex;
   flex-direction: column;
-  margin-top: 12rem;
+  margin-top: 9rem;
   opacity: .8;
   text-align: center;
 }
@@ -426,7 +432,16 @@ footer i.fas:hover, footer i.fab:hover {
   }
 }
 
-/* CASE STUDY PAGE */
+/* CASE STUDY PAGE
+.cs-mockup {
+  background-image: url("../images/case-study-1/mainmockup.png");
+  text-align: center;
+  height: 28rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 .cs-header {
   display: flex;
   flex-direction: column;
@@ -474,7 +489,6 @@ footer i.fas:hover, footer i.fab:hover {
   align-self: center;
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
 }
 
 .cs-info {
@@ -499,6 +513,10 @@ footer i.fas:hover, footer i.fab:hover {
 .cs-info li {
   color: var(--black);
   font-weight: 200;
+}
+
+.left-list {
+  padding-right: 12rem;
 }
 
 .case-study-content {
@@ -1033,7 +1051,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 .msg-btn {
-  color: var(--red-pink);
+  color: var(--white);
   margin-top: 1rem;
   width: 100%;
 }
