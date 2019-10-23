@@ -252,7 +252,7 @@ footer {
   background: var(--forestgreen);
   grid-area: footer;
   display: flex;
-  height: 10rem;
+  height: 12rem;
   justify-content: center;
   position: relative;
 }
@@ -265,7 +265,7 @@ footer > ul > li {
 .chat-bubble {
   margin-left: -16.5rem;
   position: absolute;
-  bottom: 3.2rem;
+  bottom: 4.1rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -294,7 +294,7 @@ footer i.fas:hover, footer i.fab:hover {
   font-size: 1.2rem;
   opacity: .7;
   position: absolute;
-  top: 7rem;
+  top: 8rem;
 }
 
 /* HOMEPAGE */
