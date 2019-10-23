@@ -291,7 +291,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 .caption {
   color: var(--light-pink);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   opacity: .7;
   position: absolute;
   top: 7rem;
@@ -1074,6 +1074,7 @@ footer i.fas:hover, footer i.fab:hover {
   color: var(--light-pink);
   font-size: 2rem;
   font-weight: 400;
+  line-height: 3rem;
   grid-area: heading;
 }
 
