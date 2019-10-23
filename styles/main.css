@@ -947,6 +947,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 /* BIO PAGE */
 .bio {
+  background-color: var(--white);
   display: grid;
   grid-gap: 3rem;
   grid-template-areas:
@@ -1070,7 +1071,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .contact-greeting {
-  color: var(--forestgreen);
+  color: var(--light-pink);
   font-size: 2rem;
   font-weight: 400;
   grid-area: heading;
@@ -1083,7 +1084,8 @@ form {
 
 input {
   background-color: #fff;
-  border: #d2d2d2 1px solid;
+  border: 0px;
+  border-radius: 8px;
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 300;
@@ -1095,7 +1097,8 @@ input {
 
 textarea {
   background-color: #fff;
-  border: #d2d2d2 1px solid;
+  border: 0px;
+  border-radius: 8px;
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 300;
@@ -1107,10 +1110,11 @@ textarea {
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  background-color: #F0F0F0;
+  background-color: #FFEDE8;
 }
 
 .msg-btn {
+  border: 0;
   color: var(--white);
   margin-top: 1rem;
   width: 100%;
