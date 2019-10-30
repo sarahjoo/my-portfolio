@@ -945,6 +945,7 @@ footer i.fas:hover, footer i.fab:hover {
 .takeaway-container {
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: 1rem 0;
 }
@@ -954,7 +955,7 @@ footer i.fas:hover, footer i.fab:hover {
   border-radius: 1rem;
   padding: 1rem 4rem;
   text-align: left;
-  width: 80%;
+  width: 70%;
 }
 
 .bottom-nav {
