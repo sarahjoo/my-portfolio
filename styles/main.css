@@ -107,7 +107,8 @@ a:link, a:visited, a:active, a:hover {
   cursor: pointer;
   display: inline-block;
   font-size: 1.7rem;
-  padding: 1.5rem 2rem;
+  line-height: 2.4rem;
+  padding: 1.3rem 2rem;
   text-align: center;
   transition: 0.5s;
   width: 100%;
@@ -543,7 +544,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 700px) {
   .example-image {
-    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -813,14 +814,14 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 700px) {
   .case-study {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .case-study {
-    padding-left: 22rem;
-    padding-right: 22rem;
+    padding-left: 27rem;
+    padding-right: 27rem;
   }
 }
 
@@ -891,7 +892,7 @@ footer i.fas:hover, footer i.fab:hover {
 
   .col1 {
     flex: 1 1 0;
-    padding-right: 4rem;
+    padding-right: 5rem;
   }
 
   .col2 {
