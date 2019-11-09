@@ -1,6 +1,6 @@
 /* colors */
 :root {
-  --forestgreen: rgba(36, 58, 66, 1); /* #29424C */
+  --forestgreen: rgba(36, 58, 66, 1); /* #243a42 */
   --green: rgba(63, 113,120); /* #3F7178 */
   --red-pink: rgba(153, 54, 87, 1); /* #993657 */
   --blush: rgba(245, 208, 194);  /* #F5D0C2 */
@@ -198,7 +198,7 @@ nav {
 }
 
 .sticky {
-  background: var(--forestgreen);
+  background: linear-gradient(0deg, rgba(36,58,66,0) 0%, rgba(36,58,66,0.5032387955182073) 50%, rgba(36,58,66,1) 100%);
   position: fixed;
   top: 0;
   width: 100%;
@@ -219,7 +219,7 @@ nav {
 
 .logo {
   margin-top: .4rem;
-  width: 3rem;
+  width: 2.8rem;
 }
 
 .navlinks {
@@ -321,14 +321,15 @@ main {
 
 .content-details h2 {
   color: #fff;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
   text-transform: uppercase;
 }
 
 .content-details p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .fadeIn-top{
@@ -336,7 +337,7 @@ main {
 }
 
 .main-margin {
-  margin-bottom: 16rem;
+  margin-bottom: 12rem;
 }
 
 footer {
@@ -391,7 +392,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 /* HOMEPAGE */
 .hero {
-  align-content: flex-start;
+  align-content: center;
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
@@ -399,14 +400,14 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 701px) {
   .hero {
-    padding: 16rem 2.4rem 0 2.4rem;
-    max-width: 70rem;
+    padding: 14rem 2.4rem 0 2.4rem;
+    width: 58rem;
   }
 }
 
 .hero-header {
   color: var(--blush);
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 400;
   line-height: 4.8rem;
 }
@@ -440,8 +441,8 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 701px) {
   .hero-subheader {
-    font-size: 2.4rem;
-    line-height: 5rem;
+    font-size: 2.7rem;
+    line-height: 4.5rem;
   }
 }
 
@@ -453,14 +454,14 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 701px) {
   .sub-bold {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 .see-work {
   display: flex;
   flex-direction: column;
-  margin-top: 9rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
   opacity: .8;
   text-align: center;
@@ -1188,6 +1189,15 @@ footer i.fas:hover, footer i.fab:hover {
   font-size: 1.7rem;
   line-height: 2.8rem;
   font-weight: 400;
+}
+
+.about-icon {
+  text-align: center;
+}
+
+.about-icon img {
+  padding: 0 1rem;
+  width: 6rem;
 }
 
 .section1 {
