@@ -87,7 +87,7 @@ a:link, a:visited, a:active, a:hover {
   color: var(--blush);
   font-family: "Montserrat";
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -134,8 +134,8 @@ a:link, a:visited, a:active, a:hover {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: .5s;
-  transition-duration: .5s;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-timing-function: ease-out;
@@ -143,8 +143,8 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .sink:hover, .sink:focus, .sink:active {
-  -webkit-transform: translateY(8px);
-  transform: translateY(8px);
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 /* structure */
@@ -198,7 +198,7 @@ nav {
 }
 
 .sticky {
-  background: linear-gradient(0deg, rgba(36,58,66,0) 0%, rgba(36,58,66,0.5032387955182073) 50%, rgba(36,58,66,1) 100%);
+  background: var(--forestgreen);
   position: fixed;
   top: 0;
   width: 100%;
@@ -321,8 +321,8 @@ main {
 
 .content-details h2 {
   color: #fff;
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 2.4rem;
+  font-weight: 600;
   margin-bottom: 0.1em;
   text-transform: uppercase;
 }
@@ -398,7 +398,7 @@ footer i.fas:hover, footer i.fab:hover {
   padding-top: 10rem;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 800px) {
   .hero {
     padding: 14rem 2.4rem 0 2.4rem;
     width: 58rem;
@@ -906,8 +906,9 @@ footer i.fas:hover, footer i.fab:hover {
     padding-bottom: 0;
   }
 
-  .col2 h4 {
+  .col1 h4, .col2 h4 {
     margin-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -1152,11 +1153,11 @@ footer i.fas:hover, footer i.fab:hover {
   .bio {
     grid-gap: 3rem 6rem;
     grid-template-areas:
-      "section1 section2"
-      "section5 section3"
-      ". section4";
+    "section2 section1"
+    "section3 section4"
+    "section5 .";
     grid-template-columns: minmax(30rem, 40rem);
-    grid-template-rows: auto-fit;
+    grid-auto-rows: auto-fit;
     padding-left: 8rem;
     padding-right: 8rem;
     place-items: start stretch;
@@ -1167,9 +1168,9 @@ footer i.fas:hover, footer i.fab:hover {
   .bio {
     grid-gap: 2rem 10rem;
     grid-template-areas:
-      "section1 section2"
-      "section5 section3"
-      ". section4";
+      "section2 section1"
+      "section3 section4"
+      "section5 .";
     grid-template-columns: minmax(30rem, 30rem));
     grid-template-rows: auto-fill;
     padding: 12rem;
