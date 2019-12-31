@@ -16,35 +16,25 @@ function stickIt() {
   }
 }
 
-// Scroll to top function
-var basicScrollTop = function () {
-  // This is the button
-  var btnTop = document.querySelector('#goTop');
-  // Button is revealed at scroll position
-  var btnReveal = function () {
-    var position = document.querySelector('#position');
-    if (window.scrollY >= 400) {
-      btnTop.classList.add('is-visible');
-    } else {
-      btnTop.classList.remove('is-visible');
-    }
-  }
-  // Smooth scroll to top
-  var TopscrollTo = function () {
-    if(window.scrollY!=0) {
-      setTimeout(function() {
-        window.scrollTo(0,window.scrollY-1000);
-        TopscrollTo();
-      }, 5);
-    }
-  }
-  // Event listeners
-  window.addEventListener('scroll', btnReveal);
-  btnTop.addEventListener('click', TopscrollTo);
+//Get the button
+var mybutton = document.getElementById("goTop");
 
-};
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-basicScrollTop();
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 // Mobile menu on scroll
 var scrollMenu = function () {

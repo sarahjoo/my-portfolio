@@ -1,12 +1,12 @@
 /* colors */
 :root {
-  --forestgreen: rgba(36, 58, 66, 1); /* #243a42 */
+  --forestgreen: rgba(38, 70, 77, 1); /* #315159 */
   --green: rgba(63, 113,120); /* #3F7178 */
-  --red-pink: rgba(153, 54, 87, 1); /* #993657 */
-  --blush: rgba(245, 208, 194);  /* #F5D0C2 */
+  --red-pink: rgba(173, 69, 87, 1); /* #AD4557 */
+  --blush: rgba(255, 237, 230);  /* #FFEDE6 */
   --purple: rgba(89, 33, 81); /* #592151 */
-  --black: rgba(38, 27, 30); /* #261B1E */
-  --white: rgba(250, 245, 242, 1); /* #fcfcfc */
+  --black: rgba(45, 33, 35); /* #1B2021 */
+  --white: rgba(250, 247, 245, 1); /* #FAF7F5 */
 }
 
 /* typography */
@@ -44,7 +44,7 @@ h4 {
 }
 
 h5 {
-  color: var(--blush);
+  color: var(--black);
   font-family: "Montserrat";
   font-size: 2.7rem;
   font-weight: 600;
@@ -58,7 +58,7 @@ p {
   font-family: "Montserrat";
   font-size: 1.7rem;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 2.5rem;
   margin-bottom: 1.2rem;
 }
 
@@ -84,7 +84,7 @@ li {
 
 /* links */
 a:link, a:visited, a:active, a:hover {
-  color: var(--blush);
+  color: var(--redpink);
   font-family: "Montserrat";
   font-size: 1.6rem;
   font-weight: 600;
@@ -153,7 +153,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 html {
-  background: var(--forestgreen);
+  background: var(--white);
   font-size: 10px;
   font-family: "Montserrat", sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
   margin: 0 auto;
@@ -193,12 +193,12 @@ nav {
 
 @media screen and (min-width: 1000px) {
   nav {
-    padding: 1rem 10rem;
+    padding: 1rem 12rem;
   }
 }
 
 .sticky {
-  background: var(--forestgreen);
+  background: var(--white);
   position: fixed;
   top: 0;
   width: 100%;
@@ -227,7 +227,7 @@ nav {
 }
 
 .navlinks a:link, .navlinks a:visited {
-  color: var(--blush);
+  color: var(--red-pink);
   margin-left: 2.4rem;
 }
 
@@ -250,7 +250,6 @@ main {
     align-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
     grid-gap: 10px;
     grid-auto-flow: dense;
     padding: 6rem 2.4rem;
@@ -259,12 +258,7 @@ main {
 
 @media screen and (min-width: 1000px) {
   .projects-container {
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    grid-auto-flow: dense;
-    padding: 6rem 10rem;
+    padding: 6rem 12rem;
   }
 }
 
@@ -342,7 +336,7 @@ main {
 
 footer {
   align-items: center;
-  background: #01190f;
+  background: var(--forestgreen);
   grid-area: footer;
   display: flex;
   height: 12rem;
@@ -352,7 +346,7 @@ footer {
 
 footer > ul > li {
   display: inline-block;
-  margin: 1rem;
+  margin: .8rem;
 }
 
 .chat-bubble {
@@ -374,7 +368,7 @@ footer > ul > li {
 i.fas, i.fab {
   color: var(--blush);
   font-size: 3.4rem;
-  opacity: .9;
+  opacity: .95;
 }
 
 footer i.fas:hover, footer i.fab:hover {
@@ -385,9 +379,9 @@ footer i.fas:hover, footer i.fab:hover {
 .caption {
   color: var(--blush);
   font-size: 1.2rem;
-  opacity: .7;
+  opacity: .8;
   position: absolute;
-  top: 8rem;
+  top: 8.5rem;
 }
 
 /* HOMEPAGE */
@@ -401,12 +395,12 @@ footer i.fas:hover, footer i.fab:hover {
 @media screen and (min-width: 800px) {
   .hero {
     padding: 14rem 2.4rem 0 2.4rem;
-    width: 58rem;
+    width: 70rem;
   }
 }
 
 .hero-header {
-  color: var(--blush);
+  color: var(--black);
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 4.8rem;
@@ -420,7 +414,6 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .hero-bold {
-  color: var(--blush);
   font-size: 3.4rem;
   font-weight: 600;
 }
@@ -432,7 +425,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .hero-subheader {
-  color: var(--blush);
+  color: var(--black);
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.5rem;
@@ -447,7 +440,6 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .sub-bold {
-  color: var(--blush);
   font-size: 2.6rem;
   font-weight: 700;
 }
@@ -462,25 +454,14 @@ footer i.fas:hover, footer i.fab:hover {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
-  margin-bottom: 2rem;
-  opacity: .8;
+  margin-bottom: 3rem;
+  opacity: 1;
   text-align: center;
 }
 
 .see-work:hover {
-  opacity: 1;
+  opacity: .8;
   transition: 0.5s ease;
-}
-
-.see-work a {
-  color: var(--blush);
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
-
-.see-work i.fas {
-  color: var(--blush);
-  font-size: 1.8rem;
 }
 
 .project {
@@ -596,12 +577,12 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .cs-details h1 {
-  color: var(--blush);
+  color: var(--red-pink);
   font-weight: 600;
 }
 
 .cs-details h2 {
-  color: var(--blush);
+  color: var(--black);
   font-size: 2rem;
   font-weight: 300;
   padding-bottom: 1rem;
@@ -627,7 +608,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .cs-specs h4 {
-  color: var(--blush);
+  color: var(--red-pink);
 }
 
 .cs-specs ul {
@@ -635,7 +616,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .cs-specs li {
-  color: var(--blush);
+  color: var(--black);
   font-weight: 200;
   line-height: 1.8rem;
   margin-bottom: 1.6rem;
@@ -727,7 +708,7 @@ footer i.fas:hover, footer i.fab:hover {
   margin: -100px 0 0 0;
   padding: 11rem 5rem 100rem 5rem;
   right: -7rem;
-  background: var(--forestgreen);
+  background: var(--black);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -765,10 +746,10 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 900px) {
   #stickyMenu {
-    background: var(--forestgreen);
+    background: var(--blush);
     display: flex;
     grid-area: sub-menu;
-    height: 3rem;
+    height: 3.4rem;
     justify-content: space-around;
     text-align: center;
     z-index: 1;
@@ -781,7 +762,7 @@ footer i.fas:hover, footer i.fab:hover {
 
   #stickyMenu li {
     align-items: center;
-    color: var(--blush);
+    color: var(--black);
     display: flex;
     font-weight: 400;
     line-height: 1.8rem;
@@ -789,11 +770,12 @@ footer i.fas:hover, footer i.fab:hover {
   }
 
   #stickyMenu a:visited, #stickyMenu a:link {
-    color: var(--blush);
+    color: var(--black);
     opacity: .8;
   }
 
   #stickyMenu a:active, #stickyMenu a:hover {
+    color: var(--red-pink);
     opacity: 1;
     transition: 0.8s;
   }
@@ -834,7 +816,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .case-study h3 {
-  color: var(--green);
+  color: var(--forestgreen);
   font-weight: 600;
   margin-bottom: .5rem;
   margin-top: 3rem;
@@ -1060,11 +1042,15 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .takeaway {
-  background-color: #FFEDE8;
+  background-color: var(--blush);
   border-radius: 1rem;
-  padding: 1rem 4rem;
+  padding: 1rem 4rem 2rem 4rem;
   text-align: left;
   width: 70%;
+}
+
+.takeaway h4 {
+  color: var(--black);
 }
 
 .bottom-nav {
@@ -1107,8 +1093,7 @@ footer i.fas:hover, footer i.fab:hover {
     cursor: pointer;
     position: fixed;
     padding: 1rem 1.2rem 1rem 1rem;
-    opacity: 0;
-    background: rgba(77, 77, 77, .2);
+    background: rgba(38, 70, 77, .1);
     border:none;
     transition: opacity 0.5s linear;
   }
@@ -1118,7 +1103,7 @@ footer i.fas:hover, footer i.fab:hover {
   }
 
   #goTop i.fas {
-    color: var(--black);
+    color: var(--forestgreen);
     font-size: 2.4rem;
   }
 }
@@ -1258,7 +1243,7 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .contact-greeting {
-  color: var(--blush);
+  color: var(--black);
   font-size: 2rem;
   font-weight: 400;
   line-height: 3rem;
@@ -1271,7 +1256,7 @@ form {
 }
 
 input {
-  background-color: #fff;
+  background-color: var(--blush);
   border: 0px;
   border-radius: 8px;
   font-family: "Montserrat";
@@ -1284,7 +1269,7 @@ input {
 }
 
 textarea {
-  background-color: #fff;
+  background-color: var(--blush);
   border: 0px;
   border-radius: 8px;
   font-family: "Montserrat";
@@ -1298,7 +1283,7 @@ textarea {
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  background-color: #FFEDE8;
+  background-color: #fff;
 }
 
 .msg-btn {
