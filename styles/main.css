@@ -1141,14 +1141,14 @@ footer i.fas:hover, footer i.fab:hover {
     "section2 section1"
     "section3 section4"
     "section5 .";
-    grid-template-columns: minmax(30rem, 40rem);
+    grid-template-columns: minmax(50rem, 40rem);
     grid-auto-rows: auto-fit;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
     place-items: start stretch;
   }
 }
-
+/*
 @media only screen and (min-width: 1400px) {
   .bio {
     grid-gap: 2rem 10rem;
@@ -1156,13 +1156,13 @@ footer i.fas:hover, footer i.fab:hover {
       "section2 section1"
       "section3 section4"
       "section5 .";
-    grid-template-columns: minmax(30rem, 30rem));
+    grid-template-columns: minmax(30rem, 30rem);
     grid-template-rows: auto-fill;
     padding: 12rem;
     place-items: start stretch;
   }
 }
-
+*/
 .bio h3 {
   color: var(--forestgreen);
   font-size: 2.2rem;
