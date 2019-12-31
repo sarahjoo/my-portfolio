@@ -366,7 +366,7 @@ footer > ul > li {
 }
 
 i.fas, i.fab {
-  color: var(--blush);
+  color: #EBD6CF;
   font-size: 3.4rem;
   opacity: .95;
 }
