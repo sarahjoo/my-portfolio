@@ -390,13 +390,15 @@ footer i.fas:hover, footer i.fab:hover {
   align-content: center;
   display: flex;
   flex-direction: column;
-  padding-top: 15rem;
+  margin-bottom: 4rem;
+  padding-top: 14rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .hero {
-    padding: 26rem 2.4rem 0 2.4rem;
-    width: 70rem;
+    margin-bottom: 10rem;
+    padding-top: 24rem;
+    width: 55rem;
   }
 }
 
@@ -454,15 +456,13 @@ footer i.fas:hover, footer i.fab:hover {
 .skyline {
   position: absolute;
   left: 0rem;
-  top: 14rem;
+  top: 12rem;
   width: 100%;
 }
 
 .see-work {
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
-  margin-bottom: 3rem;
   opacity: 1;
   position: relative;
   text-align: center;
