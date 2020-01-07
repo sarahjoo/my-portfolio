@@ -675,7 +675,7 @@ footer i.fas:hover, footer i.fab:hover {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: var(--black);
+  background: var(--forestgreen);
   border-radius: 2px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -717,7 +717,7 @@ footer i.fas:hover, footer i.fab:hover {
   margin: -100px 0 0 0;
   padding: 11rem 5rem 100rem 5rem;
   right: -7rem;
-  background: var(--black);
+  background: var(--forestgreen);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
