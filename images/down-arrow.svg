@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
     <title>down-arrow</title>
     <desc>Created with Sketch.</desc>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="down-arrow" transform="translate(1.000000, 1.000000)" stroke="#315159" stroke-width="2">
-            <circle id="Oval" cx="19" cy="19" r="19"></circle>
-            <polyline id="Line" stroke-linecap="round" points="11.875 16.625 19 23.75 26.125 16.625"></polyline>
+        <g id="down-arrow" transform="translate(1.000000, 1.000000)" stroke="#206C9E" stroke-width="2">
+            <circle id="Oval" cx="18" cy="18" r="18"></circle>
+            <polyline id="Line" stroke-linecap="round" points="11.25 15.75 18 22.5 24.75 15.75"></polyline>
         </g>
     </g>
 </svg>
