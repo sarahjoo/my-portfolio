@@ -2,12 +2,12 @@
 :root {
   --forestgreen: rgba(38, 70, 77, .7); /* #315159 */
   --gray: #656361;
-  --red-pink: #CC3E53;
+  --red-pink: #30818D;
   --blush: rgba(255, 244, 240);  /* #FFF4F0 */
   --purple: rgba(89, 33, 81); /* #592151 */
   --black: #323437;
   --white: rgba(252, 251, 250, 1); /* #FCFBFA */
-  --lightgray: #F4F6F7;
+  --lightgray: #FAF5F5;
 }
 
 /* typography */
@@ -189,18 +189,14 @@ html {
 nav {
   display: flex;
   grid-area: nav;
-  justify-content: space-between;
   padding: 1rem 2.4rem;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 1000px) {
   nav {
-    padding: 1rem 14rem;
+    padding: 1rem 20rem;
   }
-}
-
-nav > ul {
-  align-items: center;
 }
 
 .sticky {
@@ -223,18 +219,17 @@ nav > ul {
   padding-top: 10rem;
 }
 
-.logo {
-  margin-top: .6rem;
-  width: 2.8rem;
-}
-
 .navlinks {
   display: flex;
 }
 
+.navlinks li {
+  justify-content: space-around;
+}
+
 .navlinks a:link, .navlinks a:visited {
   color: var(--gray);
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .navlinks a:active, .navlinks a:hover {
@@ -270,7 +265,7 @@ main {
 
 @media screen and (min-width: 1000px) {
   .projects-container {
-    padding: 6rem 14rem;
+    padding: 6rem 20rem;
   }
 }
 
@@ -401,30 +396,36 @@ footer i.fas:hover, footer i.fab:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
-  padding: 17rem 2.4rem 0 2.4rem;
-}
-
-@media screen and (min-width: 600px) {
-  .hero {
-    margin-bottom: 6rem;
-    padding: 20rem 16rem 0 16rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .hero {
-    padding: 30rem 16rem 0 16rem;
-  }
+  min-height: 60vh;
+  overflow-x: hidden;
+  padding: 16rem 2.4rem 0 2.4rem;
 }
 
 .hero-container {
-  max-width: 50rem;
+  max-width: 40rem;
 }
 
 @media screen and (min-width: 800px) {
+  .hero {
+    margin-bottom: 6rem;
+    min-height: 100vh;
+    padding: 25rem 15rem 0 15rem;
+  }
+
   .hero-container {
     max-width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .hero {
+    margin-bottom: 6rem;
+    min-height: 100vh;
+    padding: 25rem 35rem 0 35rem;
+  }
+
+  .hero-container {
+    max-width: 70rem;
   }
 }
 
@@ -443,9 +444,9 @@ footer i.fas:hover, footer i.fab:hover {
 }
 
 .hero-bold {
-  color: var(--red-pink);
+  color: var(--black);
   font-size: 2.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 800px) {
@@ -480,23 +481,33 @@ footer i.fas:hover, footer i.fab:hover {
   }
 }
 
-.skyline {
+.logo {
   position: absolute;
-  left: 0rem;
-  top: 12rem;
-  width: 100%;
+  right: 14rem;
+  top: 17.5rem;
+  width: 9rem;
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    position: absolute;
+    right: 34rem;
+    top: 19rem;
+    width: 20rem;
+  }
 }
 
 .see-work {
   display: flex;
   flex-direction: column;
-  opacity: 1;
+  opacity: .7;
+  margin-top: 5rem;
   position: relative;
   text-align: center;
 }
 
 .see-work:hover {
-  opacity: .8;
+  opacity: 1;
   transition: 0.5s ease;
 }
 
