@@ -1,13 +1,12 @@
 /* colors */
 :root {
   --forestgreen: rgba(38, 70, 77, .7); /* #315159 */
-  --gray: #656361;
-  --red-pink: #30818D;
-  --blush: rgba(255, 244, 240);  /* #FFF4F0 */
-  --purple: rgba(89, 33, 81); /* #592151 */
-  --black: #323437;
+  --gray: rgba(101,99,97,1);; /* #656361 */
+  --teal: rgba(48,129,141,1);; /* #30818D */
+  --blush: rgba(241, 228, 228);  /* #F1E4E4 */
+  --black: rgba(50,52,55,1);; /* #323437 */
   --white: rgba(252, 251, 250, 1); /* #FCFBFA */
-  --lightgray: #FAF5F5;
+  --lightgray: rgba(247,245,245,1);; /* #F7F5F5 */
 }
 
 /* typography */
@@ -103,7 +102,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .button {
-  background-color: var(--red-pink);
+  background-color: var(--teal);
   border-radius: .1rem;
   cursor: pointer;
   display: inline-block;
@@ -123,7 +122,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .btn-light {
-  color: var(--red-pink);
+  color: var(--teal);
   text-align: center;
   margin: 1rem 0;
 }
@@ -187,15 +186,19 @@ html {
 }
 
 nav {
-  display: flex;
   grid-area: nav;
   padding: 1rem 2.4rem;
-  justify-content: flex-end;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   nav {
-    padding: 1rem 20rem;
+    padding: 1rem 15rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  nav {
+    padding: 1rem 35rem;
   }
 }
 
@@ -221,19 +224,19 @@ nav {
 
 .navlinks {
   display: flex;
+  justify-content: space-between;
 }
 
 .navlinks li {
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .navlinks a:link, .navlinks a:visited {
   color: var(--gray);
-  margin-left: 3rem;
 }
 
 .navlinks a:active, .navlinks a:hover {
-  color: var(--red-pink);
+  color: var(--teal);
   transition: 0.5s ease-in-out;
 }
 
@@ -246,10 +249,33 @@ main {
   justify-content: center;
 }
 
+.heading-container {
+  background-color: var(--lightgray);
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.highlight {
+  background-color: var(--blush);
+  font-size: 1rem;
+	border-radius: 1px;
+}
+
+.h-text-homepage {
+  color: var(--black);
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+.h-text-homepage:hover {
+  text-transform: none;
+}
+
 .projects-container {
   align-content: center;
+  background-color: var(--lightgray);
   display: inline-inline-block;
-  padding: 6rem 0;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -259,13 +285,13 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     grid-auto-flow: dense;
-    padding: 6rem 2.4rem;
+    padding: 1rem 2.4rem 5rem 2.4rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .projects-container {
-    padding: 6rem 20rem;
+    padding: 1rem 20rem 5rem 20rem;
   }
 }
 

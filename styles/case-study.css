@@ -108,7 +108,7 @@
 }
 
 .cs-specs h4 {
-  color: var(--red-pink);
+  color: var(--teal);
 }
 
 .cs-specs ul {
@@ -138,7 +138,7 @@
 }
 
 .cs-details h1 {
-  color: var(--red-pink);
+  color: var(--teal);
   font-weight: 500;
 }
 
@@ -247,7 +247,7 @@
 }
 
 #mobile-menu a:active, #mobile-menu a:hover {
-  color: var(--red-pink);
+  color: var(--teal);
   opacity: 1;
   transition: 0.4s;
 }
@@ -291,7 +291,7 @@
   }
 
   #stickyMenu a:active, #stickyMenu a:hover {
-    color: var(--red-pink);
+    color: var(--teal);
     opacity: 1;
     transition: 0.8s;
   }
@@ -369,12 +369,6 @@
   margin-bottom: 2rem;
   position: relative;
   align-self: center;
-}
-
-.highlight {
-  background-color: #F1E2E2;
-  font-size: 1rem;
-	border-radius: 1px;
 }
 
 .h-text {
@@ -610,7 +604,7 @@
 }
 
 .bottom-nav a:active, .bottom-nav a:link, .bottom-nav a:visited {
-  color: var(--red-pink);
+  color: var(--teal);
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2rem;
@@ -618,7 +612,7 @@
 }
 
 .bottom-nav i.fas {
-  color: var(--red-pink);
+  color: var(--teal);
   font-size: 1.8rem;
   margin-top: 2rem;
   opacity: .8;
