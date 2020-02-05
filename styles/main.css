@@ -1,9 +1,8 @@
 /* colors */
 :root {
-  --forestgreen: rgba(38, 70, 77, .7); /* #315159 */
-  --gray: rgba(101,99,97,1);; /* #656361 */
-  --teal: rgba(48,129,141,1);; /* #30818D */
-  --blush: rgba(241, 228, 228);  /* #F1E4E4 */
+  --gray: rgba(85,87,87,1);; /* #555757 */
+  --forestgreen: rgba(9, 109, 109, 1); /* #085959 */
+  --blush: rgba(242, 216, 211);  /* #F2D8D3 */
   --black: rgba(50,52,55,1);; /* #323437 */
   --white: rgba(252, 251, 250, 1); /* #FCFBFA */
   --lightgray: rgba(247,245,245,1);; /* #F7F5F5 */
@@ -29,10 +28,9 @@ h2 {
 h3 {
   color: var(--black);
   font-family: "Montserrat";
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 400;
-  line-height: 3.6rem;
-  margin: 1.3rem 0;
+  margin-bottom: 2rem;
 }
 
 h4 {
@@ -102,7 +100,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .button {
-  background-color: var(--teal);
+  background-color: var(--forestgreen);
   border-radius: .1rem;
   cursor: pointer;
   display: inline-block;
@@ -122,7 +120,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .btn-light {
-  color: var(--teal);
+  color: var(--forestgreen);
   text-align: center;
   margin: 1rem 0;
 }
@@ -236,7 +234,7 @@ nav {
 }
 
 .navlinks a:active, .navlinks a:hover {
-  color: var(--teal);
+  color: var(--forestgreen);
   transition: 0.5s ease-in-out;
 }
 

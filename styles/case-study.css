@@ -108,7 +108,7 @@
 }
 
 .cs-specs h4 {
-  color: var(--teal);
+  color: var(--forestgreen);
 }
 
 .cs-specs ul {
@@ -138,7 +138,7 @@
 }
 
 .cs-details h1 {
-  color: var(--teal);
+  color: var(--forestgreen);
   font-weight: 500;
 }
 
@@ -247,9 +247,9 @@
 }
 
 #mobile-menu a:active, #mobile-menu a:hover {
-  color: var(--teal);
+  color: var(--blush);
   opacity: 1;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 /* Let slide it in from the left */
@@ -291,7 +291,7 @@
   }
 
   #stickyMenu a:active, #stickyMenu a:hover {
-    color: var(--teal);
+    color: var(--forestgreen);
     opacity: 1;
     transition: 0.8s;
   }
@@ -330,24 +330,24 @@
 
 .case-study h2 {
   color: var(--black);
+  font-size: 4rem;
   font-weight: 800;
-  margin-top: 9rem;
-  margin-bottom: 2rem;
+  margin-top: 12rem;
+  margin-bottom: 0rem;
   text-align: center;
 }
 
 .case-study h3 {
   color: var(--gray);
   font-weight: 600;
-  margin-bottom: .5rem;
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .case-study h4 {
   color: var(--black);
   font-weight: 600;
   margin-bottom: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .case-study p {
@@ -372,10 +372,9 @@
 }
 
 .h-text {
-  color: var(--black);
-  font-size: 2.7rem;
+  color: var(--gray);
+  font-size: 4rem;
   font-weight: 800;
-  line-height: 3rem;
   text-align: center;
 }
 
@@ -388,12 +387,12 @@
 
 .col1 {
   align-items: center;
-  padding-bottom: .5rem;
+  padding-bottom: 2rem;
 }
 
 .col2 {
   align-items: center;
-  padding-bottom: .5rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 900px) {
@@ -409,12 +408,12 @@
 
   .col2 {
     flex: 1 1 0;
-    padding-bottom: 0;
+    padding-bottom: 4rem;
   }
 
   .col2-img {
     flex: 1.5 1 0;
-    padding-bottom: 0;
+    padding-bottom: 4rem;
   }
 
   .col1 h4, .col2 h4 {
@@ -475,7 +474,7 @@
 }
 
 .persona-bio {
-  top: -9rem;
+  top: -10rem;
   left: 1.1rem;
   position: relative;
   z-index: 0;
@@ -484,7 +483,7 @@
 .persona-bio h3  {
   color: #fff;
   font-weight: 500;
-  line-height: 2.5rem;
+  line-height: 3rem;
   margin: 0;
 }
 
@@ -604,7 +603,7 @@
 }
 
 .bottom-nav a:active, .bottom-nav a:link, .bottom-nav a:visited {
-  color: var(--teal);
+  color: var(--forestgreen);
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2rem;
@@ -612,7 +611,7 @@
 }
 
 .bottom-nav i.fas {
-  color: var(--teal);
+  color: var(--forestgreen);
   font-size: 1.8rem;
   margin-top: 2rem;
   opacity: .8;
