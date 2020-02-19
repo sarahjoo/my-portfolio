@@ -301,7 +301,7 @@ main {
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -431,8 +431,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 800px) {
   .hero {
-    margin-bottom: 6rem;
-    min-height: 100vh;
+    min-height: 95vh;
     padding: 25rem 15rem 0 15rem;
   }
 
@@ -443,8 +442,6 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 1100px) {
   .hero {
-    margin-bottom: 6rem;
-    min-height: 100vh;
     padding: 25rem 35rem 0 35rem;
   }
 
