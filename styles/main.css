@@ -489,9 +489,9 @@ footer i.fas:hover, footer i.fab:hover {
 
 .logo {
   position: absolute;
-  right: 14rem;
-  top: 17.5rem;
-  width: 9rem;
+  right: 4.5rem;
+  top: 17rem;
+  width: 8rem;
 }
 
 @media screen and (min-width: 800px) {
