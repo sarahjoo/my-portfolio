@@ -340,7 +340,7 @@
 .case-study h3 {
   color: var(--gray);
   font-weight: 600;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .case-study h4 {
@@ -414,6 +414,10 @@
   .col2-img {
     flex: 1.5 1 0;
     padding-bottom: 4rem;
+  }
+
+  .col2-img img {
+    width: 80%;
   }
 
   .col1 h4, .col2 h4 {

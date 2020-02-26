@@ -196,8 +196,26 @@ nav {
 
 @media screen and (min-width: 1100px) {
   nav {
-    padding: 1rem 35rem;
+    padding: 1rem 20rem;
   }
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlinks li {
+  justify-content: center;
+}
+
+.navlinks a:link, .navlinks a:visited {
+  color: var(--gray);
+}
+
+.navlinks a:active, .navlinks a:hover {
+  color: var(--forestgreen);
+  transition: 0.5s ease-in-out;
 }
 
 .sticky {
@@ -218,24 +236,6 @@ nav {
 
 .sticky + main {
   padding-top: 10rem;
-}
-
-.navlinks {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navlinks li {
-  justify-content: center;
-}
-
-.navlinks a:link, .navlinks a:visited {
-  color: var(--gray);
-}
-
-.navlinks a:active, .navlinks a:hover {
-  color: var(--forestgreen);
-  transition: 0.5s ease-in-out;
 }
 
 header {
@@ -420,9 +420,9 @@ footer i.fas:hover, footer i.fab:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 60vh;
+  min-height: 80vh;
   overflow-x: hidden;
-  padding: 16rem 2.4rem 0 2.4rem;
+  padding: 14rem 2.4rem 0 2.4rem;
 }
 
 .hero-container {
@@ -431,7 +431,7 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 800px) {
   .hero {
-    min-height: 95vh;
+    min-height: 90vh;
     padding: 25rem 15rem 0 15rem;
   }
 
@@ -442,25 +442,25 @@ footer i.fas:hover, footer i.fab:hover {
 
 @media screen and (min-width: 1100px) {
   .hero {
-    padding: 25rem 35rem 0 35rem;
+    padding: 25rem 20rem 0 20rem;
   }
 
   .hero-container {
-    max-width: 70rem;
+    max-width: 100rem;
   }
 }
 
 .hero-header {
   color: var(--gray);
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 3.6rem;
 }
 
 @media screen and (min-width: 800px) {
   .hero-header {
-    font-size: 4.9rem;
-    line-height: 6rem;
+    font-size: 5.6rem;
+    line-height: 8rem;
   }
 }
 
@@ -470,15 +470,15 @@ footer i.fas:hover, footer i.fab:hover {
 
 .hero-subheader {
   color: var(--gray);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 2.4rem;
   padding-top: 1rem;
 }
 
 @media screen and (min-width: 800px) {
   .hero-subheader {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 4rem;
   }
 }
@@ -489,17 +489,23 @@ footer i.fas:hover, footer i.fab:hover {
 
 .logo {
   position: absolute;
-  right: 4.5rem;
-  top: 17rem;
-  width: 8rem;
+  left: 26rem;
+  top: 17.5rem;
+  width: 5rem;
 }
 
 @media screen and (min-width: 800px) {
   .logo {
-    position: absolute;
-    right: 32rem;
-    top: 20rem;
-    width: 20rem;
+    left: 56rem;
+    top: 23rem;
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .logo {
+    left: 71rem;
+    top: 25rem;
   }
 }
 
@@ -510,11 +516,6 @@ footer i.fas:hover, footer i.fab:hover {
   margin-top: 5rem;
   position: relative;
   text-align: center;
-}
-
-.see-work:hover {
-  opacity: 1;
-  transition: 0.5s ease;
 }
 
 .project {
